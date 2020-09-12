@@ -82,7 +82,7 @@ npm install
 The following are guidelines for creating question folders.
 
 - Each question has it's own folder.
-- Each question **must** have a `question.yml` file and a solution code, along with the relevant code / files that needs to be run / deployed on the server.
+- Each question **must** have a `question.yml` file ,a solution code and input/output files, along with the relevant code / files that needs to be run / deployed on the server.
 
 ### question.yml
 
