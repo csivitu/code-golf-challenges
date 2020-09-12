@@ -3,22 +3,22 @@ author: "Rohan"
 #Category can be Easy, Medium or Hard
 category: Easy
 description: |
-Problem Statement : |
-Write a program to display the Fibonacci sequence up to n-th term. |
+Problem Statement -
+Write a program to display the Fibonacci sequence up to n-th term. 
 
-Input Format : |
-A single line containing a positive integer n. |
+Input Format -
+A single line containing a positive integer n. 
 
-Output Format : |
-A single line containing space seperated integers consisting of the Fibonacci sequence up to n-th term. |
+Output Format -
+A single line containing space seperated integers consisting of the Fibonacci sequence up to n-th term. 
 
-Constraints : |
-1<=n<=10^6 |
+Constraints -
+1<=n<=10^6 
 
-Sample Input : |
+Sample Input -
 4 
 
-Sample Output : |
+Sample Output -
 0 1 1 2
 
 points : 500
