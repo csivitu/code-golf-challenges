@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "harsoh",
+      "name": "harsoh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/55947999?v=4",
+      "profile": "https://github.com/harsoh",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "code-golf-challenges",
+  "projectOwner": "csivitu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
