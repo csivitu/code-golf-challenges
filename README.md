@@ -1,4 +1,7 @@
 [![csivit][csivitu-shield]][csivitu-url]
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Issues][issues-shield]][issues-url]
 
 <!-- PROJECT LOGO -->
@@ -8,10 +11,10 @@
     <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">Code Golf Questions</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Code golf questions for CSI Code Golf Gravitas2020.
     <br />
     <a href="https://github.com/csivitu/repo"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,12 +33,10 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
+* [Template](#Template)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contributors](#contributors-)
@@ -45,23 +46,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
-
-
-### Built With
-
-* []()
-* []()
-* []()
-
+This is a repository to store Code Golf questions to be deployed for CSI Code Golf Gravitas2020.
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
+> Note: DO NOT PLAGIARIZE questions. You can take inspiration but not have the exact same questions.
 
 To get a local copy up and running follow these simple steps.
 
@@ -84,23 +75,18 @@ git clone https://github.com/github_username/repo.git
 npm install
 ```
 
+## Template
 
+### Directory Structure
 
-<!-- USAGE EXAMPLES -->
-## Usage
+The following are guidelines for creating question folders.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- Each question has it's own folder.
+- Each question **must** have a `question.yml` file and a solution code, along with the relevant code / files that needs to be run / deployed on the server.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### question.yml
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
-
-
+Every question must have a `question.yml`, in the format specified in [question-example.yml](./question-example.yml). This is **MANDATORY**, without this the question will not be deployed. Remove the comments in the specified format, leave out the `visibility`, `round` and `points` keys as they are in the template. 
 
 <!-- CONTRIBUTING -->
 ## Contributing
