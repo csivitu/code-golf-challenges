@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
+  <a href="https://github.com/csivitu">
     <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
   </a>
 
@@ -16,14 +16,14 @@
   <p align="center">
     Code golf questions for CSI Code Golf Gravitas2020.
     <br />
-    <a href="https://github.com/csivitu/repo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/csivitu/code-golf-challenges"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/csivitu/repo">View Demo</a>
+    <a href="https://github.com/csivitu/code-golf-challenges">View Demo</a>
     ·
-    <a href="https://github.com/csivitu/repo/issues">Report Bug</a>
+    <a href="https://github.com/csivitu/code-golf-challenges/issues">Report Bug</a>
     ·
-    <a href="https://github.com/csivitu/repo/issues">Request Feature</a>
+    <a href="https://github.com/csivitu/code-golf-challenges/issues">Request Feature</a>
   </p>
 </p>
 
@@ -68,7 +68,7 @@ npm install npm@latest -g
  
 1. Clone the repo
 ```sh
-git clone https://github.com/github_username/repo.git
+git clone https://github.com/csivitu/code-golf-challenges.git
 ```
 2. Install NPM packages
 ```sh
@@ -114,4 +114,4 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 [csivitu-shield]: https://img.shields.io/badge/csivitu-csivitu-blue
 [csivitu-url]: https://csivit.com
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/csivitu/repo/issues
+[issues-url]: https://github.com/csivitu/code-golf-challenges/issues
