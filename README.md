@@ -1,6 +1,6 @@
 [![csivit][csivitu-shield]][csivitu-url]
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
@@ -131,6 +131,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/harsoh"><img src="https://avatars3.githubusercontent.com/u/55947999?v=4" width="100px;" alt=""/><br /><sub><b>harsoh</b></sub></a><br /><a href="https://github.com/csivitu/code-golf-challenges/commits?author=harsoh" title="Code">💻</a> <a href="https://github.com/csivitu/code-golf-challenges/commits?author=harsoh" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/parthkgh24"><img src="https://avatars3.githubusercontent.com/u/60440835?v=4" width="100px;" alt=""/><br /><sub><b>parthkgh24</b></sub></a><br /><a href="https://github.com/csivitu/code-golf-challenges/commits?author=parthkgh24" title="Code">💻</a> <a href="https://github.com/csivitu/code-golf-challenges/commits?author=parthkgh24" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/alias-rahil"><img src="https://avatars2.githubusercontent.com/u/59060219?v=4" width="100px;" alt=""/><br /><sub><b>alias-rahil</b></sub></a><br /><a href="https://github.com/csivitu/code-golf-challenges/commits?author=alias-rahil" title="Code">💻</a> <a href="https://github.com/csivitu/code-golf-challenges/commits?author=alias-rahil" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Shiv10"><img src="https://avatars1.githubusercontent.com/u/17690376?v=4" width="100px;" alt=""/><br /><sub><b>Shivansh Sharma</b></sub></a><br /><a href="https://github.com/csivitu/code-golf-challenges/commits?author=Shiv10" title="Code">💻</a> <a href="https://github.com/csivitu/code-golf-challenges/commits?author=Shiv10" title="Documentation">📖</a></td>
   </tr>
 </table>
 
