@@ -1,0 +1,41 @@
+name: "Fibonacci"
+author: "Rohan"
+#Category can be Easy, Medium or Hard
+category: Easy
+description: |
+Problem Statement : |
+Write a program to display the Fibonacci sequence up to n-th term. |
+
+Input Format : |
+A single line containing a positive integer n. |
+
+Output Format : |
+A single line containing space seperated integers consisting of the Fibonacci sequence up to n-th term. |
+
+Constraints : |
+1<=n<=10^6 |
+
+Sample Input : |
+4 
+
+Sample Output : |
+0 1 1 2
+
+points : 500
+
+test_cases : 
+  hidden:
+    1:
+      input: ./in1.txt
+      output: ./out1.txt
+    2:
+      input: ./in2.txt
+      output: ./out2.txt
+  
+#Round in which question will be visible
+round: 1
+
+#visible or hidden
+visibility: hidden
+
+  
