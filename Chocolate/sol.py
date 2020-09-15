@@ -1,4 +1,4 @@
-#just one solution in any of the languages we are providing needed
+#just one solution in any of the languages we are providing is needed
 
 #should run over all test files in under 30 sec
 #try that it runs even faster than 30 sec so we can allow more creative
@@ -8,7 +8,7 @@
 #as an example i will provide both normal and short length(code golf) solution
 
 '''
-Normal solution
+Normal solution(101 characters)
 t=int(input())
 for i in range(t):
 	n=int(input())
@@ -20,7 +20,7 @@ for i in range(t):
 	print(count)
 '''
 
-#Below provided is the code golf solution
+#Below provided is the code golf solution(64 characters)
 
 for i in range(int(input())):
 	print(bin(int(input())).count('1'))
