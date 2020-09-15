@@ -46,10 +46,10 @@ test_cases:
       input: |
         2
         1
-  	    6
+        6
       output: |
         1
-  	    2
+        2
   hidden:
     1:
       input:
