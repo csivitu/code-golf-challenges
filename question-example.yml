@@ -31,7 +31,7 @@ points: 500
 # Each test case has an `input` and an `output`. The input and output may
 # be multiline strings or optionally they can have a `file` attribute with
 # the path of the file from which the input must be taken.
-test_cases : 
+test_cases: 
   sample:
     1:
       input: |
