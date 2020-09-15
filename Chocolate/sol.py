@@ -1,7 +1,7 @@
 #just one solution in any of the languages we are providing needed
 
 #should run over all test files in under 30 sec
-#try that is runs even faster than 30 sec so we can allow more creative
+#try that it runs even faster than 30 sec so we can allow more creative
 #solutions that have shorter length but take more time
 
 #just one solution needed(not necessarily with optimised speed or length) but 
