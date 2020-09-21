@@ -1,0 +1,67 @@
+name: Seq1
+author: David
+
+category: Easy
+
+description: |
+  Problem Statement:
+  You have the given sequence. 
+  
+  f(n) = (1+log(2^n))/log(n)
+  
+  Find the approximation of the sequence subject to the following conditions - 
+
+  Input Format:
+  First line contains an integer T, the number of test cases. 
+  T lines follow, each line contains the positive integers a,b and c. 
+
+  a - starting term of the series (inclusive)
+  b - ending term of the series (inclusive)
+  c - number of decimal places to round off to
+
+  Output Format:
+  For each test case print a single line containing the value of the approximation. 
+
+  Constraints:
+  2<=a<=b<=10^5
+  1<=c<=10
+
+  Sample Input:
+    2
+    3 5 2
+    3 5 3
+
+  Sample Output:
+    5.52
+    5.524
+
+  Explanation:
+    given function can be simplified to (1 + n*log2)/math.log(n) where log2 is a constant value
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        2
+        1
+        6
+      output: |
+        1
+        2
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
