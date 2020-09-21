@@ -1,0 +1,80 @@
+name: Vacation
+author: Ritwik
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Harshit is tired of the monotonous life of going for classes and needs a long awaited break. To switch things up, he starts attending class in a fun way. If he attends the class on a particular day, then his atendance becomes 1 and if he doesnt attend the class it becomes 0. Every odd week, the values for Monday, Wednesday and Friday are flipped and for every even week, the values of Tuesday and Thursday are flipped(Assume a 5 day working week). Help Harshit to find the longest sequence of holidays that he can take in given N weeks. Harshit cant skip the weekend classes as he failed his math class and needs to retake that class during the weekend semester. Due to this ignore the weekend values. 
+   
+
+  Input Format:
+  First line contains an integer K, the number of test cases taken.
+  The next line contains N, the time duration(in weeks) in which we need to find the longest subsequence of holidays.
+  The following line contains 5 integers for the attendance of week 0.(1 for present and 0 for absent)
+  Output Format:
+  For each test case, print the value for longest subsequence of holidays that Harshit gets.(including week 0)
+
+  Constraints:
+  1<=T<=10^4 
+  1<=N<=10^15
+
+  Sample Input:
+  2
+  2
+  1 0 0 1 1
+  21
+  1 1 1 0 0
+
+  Sample Output:
+  2
+  3
+
+  Explanation:
+  In the first test case, for week 0 the attendance is 1 0 0 1 1 and the time duration is 2 weeks. For the first week, the values of Monday, Wednesday and Friday are flipped and for the second week, the values of Tuesday and Thursday are flipped.
+  1st week: 0 0 1 0 0
+  2nd week: 0 1 1 1 0 
+  We see that the longest sequence of 0's is 2(in week 0 and 1)
+  For the second case, the attendance of week 0 is 1 1 1 0 0. 
+  1st week: 0 1 0 0 1
+  2nd week: 0 0 0 1 1
+  3rd week: 1 0 1 1 0
+  .
+  .
+  .
+  21st week: 0 1 0 0 1
+
+  After checking the sequence, we see that the longest subsequence is is present in the second week(3). i.e 0 0 0 1 1 
+
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        2
+        3
+        1 1 1 1 0
+        6
+        1 0 0 1 1
+        
+        
+      output: |
+        4
+        2
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
