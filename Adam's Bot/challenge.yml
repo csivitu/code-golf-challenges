@@ -17,20 +17,21 @@ description: |
 
   Input Format:
   The first line of the input will be an integer (n) which will denote the number of commands.
-  The second line of the input will be signal commands which will be a space separated string(s).  
+  The second line of the input will be signal commands which be a string.(s).  
 
   Output Format:
   The output will be an imteger denoting the number of possible co-ordinates the bot could end up at. 
 
   Constraints:
-  1<=n<=10^6
-  1<len(s)<=10^6 
+  1<=n<=10^5
+  1<len(s)<=10^5
 
   Sample Input:
-  4 
+  7
+  LLDRUDR 
 
   Sample Output:
-  0 1 1 2
+  20
 
 points: 500
 
@@ -42,10 +43,10 @@ test_cases :
   sample:
     1:
       input: |
-        4
-        L R L D U D R U
+        10
+        LRLDUDRURL
       output: |
-        25
+        35
   hidden:
     1:
       input:
@@ -53,10 +54,10 @@ test_cases :
       output:
         file: ./out1.txt
     2:
-      input: |
-        5
-      output: |
-        0 1 1 2 3
+      input: 
+        file: ./in2.txt
+      output: 
+        file: ./out2.txt
   
 # Round in which question will be visible
 round: 1
