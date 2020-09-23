@@ -1,0 +1,64 @@
+name: Gym
+author: alias-rahil
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Liam wants to join gym to improve his health but he is having a hard time balancing his studies with it.
+  So, he decides to go to there every alternate day, as a result, he will find time for his studies too.
+  But he being very busy, forgets the last time he went to the gym and messes up his schedule often.
+  His friend suggests him to go to the gym only on odd/even days, depending on the start date ( whether it’s even or odd ).
+  He does not like the idea but decides to give it a try.
+  He wants to compare his friend's idea with his original plan.
+  Given a valid date in yyyy:mm:dd format, calculate the number of days on which he went to the gym according to his friend's idea which also agrees with his original plan before messing up for the first time.
+
+  Input Format:
+  First line will contain T, number of test cases. Then the test cases follow.
+  Each test case contains a single line of input, start date in the format yyyy:mm:dd.
+
+  Constraints:
+  1 ≤ T ≤ 10000
+  1900 ≤ yyyy ≤ 2038
+
+  Output Format:
+  For each test case, output in a single line the required answer.
+
+  Sample Input:
+  1
+  2019:03:31
+
+  Sample Output:
+  1
+
+  Explanation:
+  He goes to the gym on the start date which is odd.
+  The next day, 1st April, is also odd so he goes to the gym again following his friend's idea.
+  But, according to his original plan, he was supposed to stay at home and study that day.
+  Therefore the original plan was followed only for a single day. Hence, output should be 1. 
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        1
+        2019:03:31
+      output: |
+        1
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
