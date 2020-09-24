@@ -1,28 +1,36 @@
-name: Chocolate
-author: Soham
+name: ConMan
+author: david
 
 category: Easy
 
 description: |
   Problem Statement:
-  You have an integer A. You must perform some operation on it to get B (also an integer) such that
-  B - (any one digit of B) = A
+  Jac is a thief who specializes in breaking into safes. On one particular case, he encounters a safe with a strange combination lock. 
+  The screen would display a series of numbers and he had to sum up the digits in the even's or odd's places in the number if the number displayed was in an even or odd row.
+  Print the sum of even digits of a number or an odd number depending if line number is even or odd
 
   Input Format:
   First line contains an integer T, the number of test cases. 
   T lines follow, each line contains a positive integer A. 
 
   Output Format:
-  For each test case print a single line containing the value of B. 
+  if T is even, then print the sum of digits in the even positions in A, else if T is odd, print the sum of digits in odd positions in A 
 
   Constraints:
   1<=A<=10^15
+  0<=T<=10^15
 
   Sample Input:
-
+    2
+    121342
+    121342
   Sample Output:
+    7
+    6
 
   Explanation:
+    121342 is in row 0, which is an even numbered row. so the output would be 2+3+2 = 7
+    121342 is in row 1, which is an odd numbered row. so the output will be 1+1+4 = 6
 
 points: 500
 
@@ -31,11 +39,11 @@ test_cases:
     1:
       input: |
         2
-        1
-        6
+        121342
+        121342
       output: |
-        1
-        2
+        6
+        7
   hidden:
     1:
       input:
