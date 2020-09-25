@@ -21,8 +21,8 @@ description: |
   For each test case, print the value for longest subsequence of holidays that Harshit gets.(including week 0)
 
   Constraints:
-  1<=T<=10^4 
-  1<=N<=10^15
+  1<=T<=10^5 
+  1<=N<=10^6
 
   Sample Input:
   2
