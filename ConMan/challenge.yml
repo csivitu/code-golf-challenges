@@ -18,7 +18,7 @@ description: |
 
   Constraints:
   1<=A<=10^15
-  0<=T<=10^15
+  1<=T<=10^4
 
   Sample Input:
     2
@@ -29,8 +29,8 @@ description: |
     6
 
   Explanation:
-    121342 is in row 0, which is an even numbered row. so the output would be 2+3+2 = 7
     121342 is in row 1, which is an odd numbered row. so the output will be 1+1+4 = 6
+    121342 is in row , which is an even numbered row. so the output would be 2+3+2 = 7
 
 points: 500
 
