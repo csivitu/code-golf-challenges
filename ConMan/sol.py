@@ -14,4 +14,4 @@ def s(x,i):
     return a if i%2 else b
 
 for i in range(int(input())):
-    print(s(int(input()),i))
+    print(s(int(input()),i+1))
