@@ -19,7 +19,10 @@ Write a program to take input the number of rows and columns in your garden, alo
   Output Format:
   Print the garden that would be formed in the pattern of small tree followed by big tree.
   Constraints:
-  1<=n<=10^4 
+  1<=r<=40
+  1<=c<=40
+  1<=a<=15
+  1<=b<=15
   Sample Input:
   2
   2
