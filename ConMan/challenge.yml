@@ -54,7 +54,22 @@ test_cases:
       input:
         file: ./in2.txt
       output:
-        file: ./out2.txt   
+        file: ./out2.txt
+    3:
+      input:
+        file: ./in3.txt
+      output:
+        file: ./out3.txt 
+    4:
+      input:
+        file: ./in4.txt
+      output:
+        file: ./out4.txt
+    5:
+      input:
+        file: ./in5.txt
+      output:
+        file: ./out5.txt
   
 round: 1
 
