@@ -1,0 +1,86 @@
+name: Diner
+author: AJ1479
+
+category: Easy
+
+description: |
+  Problem Statement:
+  It's Saturday night, and a restaurant has a lot of single customers coming in. One table can seat 5 customers. Each customer, waiting in line, has a particular eating time and very
+  odd manners: If the table is full before he is done eating and leaves, he will wait for everyone to finish before getting up, but if he finishes before the table is filled, he leaves. It takes one 
+  minute to seat a customer, therefore, after a customer is seated one minute is reduced from the eating time for everyone at a table. 
+
+  Input Format:
+  First line contains an integer n, the number of customers waiting. 
+  n lines follow, each line contains a positive integer e which is the eating time of each of the customers. 
+
+  Output Format:
+  First line contains the number or tables required, and in the subsequent lines, print the array of the eating times of the customers who had been seated at the corresponding table number.
+
+  Constraints:
+  1<=n<=10^4
+  1<=e<=10^3
+
+  Sample Input:
+  11
+  4
+  5
+  6
+  3
+  5
+  1
+  2
+  3
+  4
+  5
+  6 
+
+  Sample Output:
+  2
+  [4, 5, 6, 3, 5, 6]
+  [1, 2, 3, 4, 5]
+
+  Explanation:
+  On this particular night, we see 11 customers appear at the restaurant. The first five will be seated at the first table. After each customer is seated, one minute gets decremented, 
+  thus leaving the eating times at the first table [0,2,4,2,5] after the last customer is seated. Since the 5 people are seated at the table at once, they now need to wait till everyone 
+  has finished eating. So, when the sixth customer(with eating time 1 minute) joins, he is seated at another table. The same continues till the tenth customer, when the eating times at 
+  the first table will have all become zero. Once the eleventh customer arrives, the customers at the first table will have all left, leaving it free hence the eleventh customer(eating time 6) 
+  will sit there. Now that the line is over, we see we have needed two tables, and the eating times of the customers sitting there are [4,5,6,3,5,6] and [1,2,3,4,5].
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        11
+        4
+        5
+        6
+        3
+        5
+        1
+        2
+        3
+        4 
+        5
+        6
+        
+      output: |
+        2
+        [4, 5, 6, 3, 5, 6]
+        [1, 2, 3, 4, 5]
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
