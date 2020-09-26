@@ -6,8 +6,8 @@ category: Easy
 description: |
   Problem Statement:
   It's Saturday night, and a restaurant has a lot of single customers coming in. One table can seat 5 customers. Each customer, waiting in line, has a particular eating time and very
-  odd manners: If the table is full and he is done eating, he will wait for everyone to finish before getting up, but if he finishes before the table is filled, he leaves. It takes one 
-  minute to seat a customer. 
+  odd manners: If the table is full before he is done eating and leaves, he will wait for everyone to finish before getting up, but if he finishes before the table is filled, he leaves. It takes one 
+  minute to seat a customer, therefore, after a customer is seated one minute is reduced from the eating time for everyone at a table. 
 
   Input Format:
   First line contains an integer n, the number of customers waiting. 
@@ -21,7 +21,7 @@ description: |
 
   Sample Input:
   11
-  5
+  4
   5
   6
   3
@@ -35,15 +35,15 @@ description: |
 
   Sample Output:
   2
-  [5, 5, 6, 3, 5, 6]
+  [4, 5, 6, 3, 5, 6]
   [1, 2, 3, 4, 5]
 
   Explanation:
   On this particular night, we see 11 customers appear at the restaurant. The first five will be seated at the first table. After each customer is seated, one minute gets decremented, 
-  thus leaving the eating times at the first table [1,2,4,2,5]. There are still people eating when the sixth customer(with eating time 1 minute) joins, so he is seated at another table. 
-  The same continues till the tenth customer, where the eating times at the first table will have all become zero. Once the eleventh customer arrives, the customers at the first table 
-  will have all left, leaving it free hence the eleventh customer(eating time 6) will sit there. Now that the line is over, we see we have needed two tables, and the eating times of the 
-  customers sitting there are [5,5,6,3,5,6] and [1,2,3,4,5].
+  thus leaving the eating times at the first table [0,2,4,2,5] after the last customer is seated. Since the 5 people are seated at the table at once, they now need to wait till everyone 
+  has finished eating. So, when the sixth customer(with eating time 1 minute) joins, he is seated at another table. The same continues till the tenth customer, when the eating times at 
+  the first table will have all become zero. Once the eleventh customer arrives, the customers at the first table will have all left, leaving it free hence the eleventh customer(eating time 6) 
+  will sit there. Now that the line is over, we see we have needed two tables, and the eating times of the customers sitting there are [4,5,6,3,5,6] and [1,2,3,4,5].
 
 points: 500
 
@@ -52,7 +52,7 @@ test_cases:
     1:
       input: |
         11
-        5
+        4
         5
         6
         3
@@ -66,7 +66,7 @@ test_cases:
         
       output: |
         2
-        [5, 5, 6, 3, 5, 6]
+        [4, 5, 6, 3, 5, 6]
         [1, 2, 3, 4, 5]
   hidden:
     1:
