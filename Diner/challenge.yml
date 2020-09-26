@@ -17,7 +17,8 @@ description: |
   First line contains the number or tables required, and in the subsequent lines, print the array of the eating times of the customers who had been seated at the corresponding table number.
 
   Constraints:
-  1<=n<=10^4 
+  1<=n<=10^4
+  1<=e<=10^3
 
   Sample Input:
   11
