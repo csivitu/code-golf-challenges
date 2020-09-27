@@ -1,0 +1,79 @@
+name: Jack-And-The-Beanstalk
+author: david
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Jack was playing a game in the village fair and won some seeds and a weird map. The seeds had numbers on them and the map had a sequence of numbers.
+  Jack did not know that the numbers meant. He went to his father who told him that the seeds are or a legendary tree called a BeanStalk. Jack knew about a BST, 
+  but never did he hear about a BeanStalk. 
+  
+  
+  His father explained that a BeanStalk is a modified BST such that the sorting condition is inverted at every row. Jack's father tells him that if he is able to find
+  the post-order of the BeanStalk, and plant the seeds in the same order, a huge tree will grow which will make him very rich.
+
+  Jack is given the inorder traversal of a BST. Help Jack find the Inorder traversal of a BeanStalk so that he gets rich. 
+  
+
+  Input Format:
+  The first line contains the +ve number 'n' , which denotes the number of elements of the BeanStalk. 
+  The next line contains the elements, one by one, of the inorder traversal of a BST .
+
+  Output Format:
+  Inorder traversal of BeanStalk separated by spaces
+  
+  
+
+  Constraints:
+  1<=n<=10^5  
+  -(10^9) <= A <= 10^9
+
+  Sample Input:
+    10
+    20 30 40 50 60 70 80  
+
+  Sample Output:
+    20 40 60 80 70 50 30 
+
+
+  Explanation:
+              50 
+           /     \ 
+          30      70 
+         /  \    /  \ 
+       20   40  60   80 
+
+    the output will be 20 30 40 50 60 70 80 
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        10
+        20 30 40 50 60 70 80
+      output: |
+        20 40 60 80 70 50 30
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt
+    3:
+      input:
+        file: ./in3.txt
+      output:
+        file: ./out3.txt 
+   
+  
+round: 1
+
+visibility: hidden
