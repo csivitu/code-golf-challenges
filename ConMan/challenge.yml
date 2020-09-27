@@ -5,7 +5,7 @@ category: Easy
 
 description: |
   Problem Statement:
-  Jac is a thief who specializes in breaking into safes. On one particular case, he encounters a safe with a strange combination lock. 
+  Jackie is a thief who specializes in breaking into safes. On one particular case, he encounters a safe with a strange combination lock. 
   The screen would display a series of 'T' numbers and for each number, he had to sum up the digits in the even's or odd's places in the number, subject to a constraint.
   If the number displayed was in an even or odd row.
   Print the sum of even digits of a number or an odd number depending if line number is even or odd
