@@ -70,14 +70,14 @@ test_cases:
   hidden:
     1:
       input:
-        file: ./input1.txt
+        file: ./Input1.txt
       output:
-        file: ./output1.txt
+        file: ./Output1.txt
     2:
       input:
-        file: ./input2.txt
+        file: ./Input2.txt
       output:
-        file: ./output2.txt   
+        file: ./Output2.txt   
 
 round: 1
 
