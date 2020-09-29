@@ -15,7 +15,9 @@ mongoose.connect(
         useCreateIndex: true,
     },
 );
-const TestCases = mongoose.model('Testcases', new mongoose.Schema({
+const testCasesCollectionName = 'Testcases';
+const questionsCollectionName = 'Questions';
+const TestCases = mongoose.model(testCasesCollectionName, new mongoose.Schema({
     inputs: {
         type: [String],
     },
@@ -25,9 +27,10 @@ const TestCases = mongoose.model('Testcases', new mongoose.Schema({
     questionName: {
         type: String,
         required: true,
+        unique: true,
     },
 }));
-const Questions = mongoose.model('Questions', new mongoose.Schema({
+const Questions = mongoose.model(questionsCollectionName, new mongoose.Schema({
     questionName: {
         type: String,
         required: true,
@@ -62,9 +65,10 @@ async function main() {
     const promisesToKeep = [];
     const challenges = getChallenges();
     try {
-        await mongoose.connection.dropCollection('questions');
+        await mongoose.connection.dropCollection(testCasesCollectionName);
+        await mongoose.connection.dropCollection(questionsCollectionName);
     } catch {
-        /* collection might not exist */
+        /* collections might not exist */
     }
     challenges.forEach(async (challenge) => {
         const questionData = parse(fs.readFileSync(join(rootDir, challenge, 'challenge.yml')).toString());
