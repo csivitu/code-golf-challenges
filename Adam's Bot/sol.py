@@ -1,0 +1,7 @@
+n=input()
+s= input()
+l = s.count('L')
+r = s.count('R')
+u = s.count('U')
+d = s.count('D')
+print((l+r+1)*(u+d+1))

@@ -1,0 +1,85 @@
+name: Seq1
+author: David
+
+category: Easy
+
+description: |
+  Problem Statement:
+  You have the given sequence. 
+  
+  f(n) = (1+log(2^n))/log(n)
+
+  where log is of base e
+  
+  Find the approximation of the sequence subject to the following conditions - 
+
+  Input Format:
+  First line contains an integer T, the number of test cases. 
+  T lines follow, each line contains the positive integers a,b and c. 
+
+  a - starting term of the series (inclusive)
+  b - ending term of the series (inclusive)
+  c - number of decimal places to display (no rounding off, just truncate)
+
+  Output Format:
+  For each test case print a single line containing the value of the approximation. 
+
+  Constraints:
+  1<=T<=10^5
+  2<=a<=b<=10^5
+  1<=c<=5
+
+  Sample Input:
+    2
+    3 5 2
+    3 5 3
+
+  Sample Output:
+    8.29
+    8.299
+
+  Explanation:
+    The sum of the series is 8.299093732712269 which when truncated to 2 decimal places is 8.29 and 3 decimal places is 8.299
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        2
+        3 5 6
+        5 7 2
+      output: |
+        8.299093
+        8.66
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt
+    3:
+      input:
+        file: ./in3.txt
+      output:
+        file: ./out3.txt
+    4:
+      input:
+        file: ./in4.txt
+      output:
+        file: ./out4.txt
+    5:
+      input:
+        file: ./in5.txt
+      output:
+        file: ./out5.txt   
+  
+round: 1
+
+visibility: hidden

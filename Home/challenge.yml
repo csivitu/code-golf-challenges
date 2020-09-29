@@ -1,0 +1,62 @@
+name: Home
+author: roerohan
+
+category: Easy
+
+description: |
+  Problem Statement:
+  John is looking for a house to rent in PrimeVille. Here, all houses are identified by unique prime numbers. The real estate company gives each tenant a key to their new home, which has two numbers written on it, 'n' and 't'. The tenant can calculate his house number by finding the 't'th prime less than 'n'.
+
+  For example, if 'n' is 1000 and 't' is 1, the house number belonging to the tenant with this key is 997, since it is the 1st prime less than 1000.
+
+  John is bad at math, please help him find his house.
+
+  Input Format:
+  The input is a single line containing 'n' and 't' as mentioned on John's key, separated by a space, so that they're in the form 'n t'.
+
+  Output Format:
+  Print the house number corresponding to John's key.
+
+  Constraints:
+  Let l(n) be the number of primes less than n.
+  10 < n <= 10^6
+  1 <= t < l(n)
+
+  Sample Input:
+  20 3
+
+  Sample Output:
+  13
+
+  Explanation:
+  Since 'n' is 20, and 't' is 3, John's house number would be the 3rd prime number less than 20. The 1st prime 20 is 19, 2nd is 17, and the 3rd is 13. So John's house number is 13.
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        20 3
+      output: |
+        13
+  hidden:
+    1:
+      input: |
+        961851 521
+      output: |
+        954641
+    2:
+      input: |
+        132435 312
+      output: |
+        128717
+    3:
+      input: |
+        696969 69
+      output: |
+        696061
+  
+round: 1
+
+visibility: hidden

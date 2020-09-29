@@ -1,0 +1,68 @@
+name: Adam's Bot
+author: Shivansh S.
+
+# Category can be Easy, Medium or Hard
+category: Easy
+
+# This will be visible on the frontend, should consist of all
+# data that the user needs to see.
+description: |
+  Problem Statement:
+  Adam is a tech enthusiast and an electrical engineer. Adam has also been in love with the idea of robots since his childhood, Adam has always
+  wanted to design a robot. Now, since he has accquirred the skills, he can fulfill his childhood dream. After a few weeks, Adam designs a basic
+  bot than can only move in 4 directions(Up, Down, Left and Right). The bot is controlled remotely using a remote control which sends the signals 
+  to the bot to move either Left or Right or Up or Down. However, there are some flaws in the bot and it ignores some of the commands recived by it. 
+  Given an input signal( a combination of 'U', 'D', 'L' or 'R' commands), Adam wants to know the number of different co-ordinates the bot could end
+  up at. The initial co-ordinates of the bot are (0,0)  
+
+  Input Format:
+  The first line of the input will be an integer N which will denote the number of commands.
+  The second line of input will be a string of length N comprising of 'U','D','L' and 'R'.
+
+  Output Format:
+  The output will be an integer denoting the number of possible co-ordinates the bot could end up at. 
+
+  Constraints:
+  1<=N<=10^5
+
+  Sample Input:
+  4
+  RRDU 
+
+  Sample Output:
+  9
+  
+  Explanation:
+  Some of the final possible co-ordinates can be (2,0), (1,1), (1,-1), (0,0) etc.
+
+points: 500
+
+# Test cases are of 2 types - sample and hidden. Test cases are numbered.
+# Each test case has an `input` and an `output`. The input and output may
+# be multiline strings or optionally they can have a `file` attribute with
+# the path of the file from which the input must be taken.
+test_cases : 
+  sample:
+    1:
+      input: |
+        10
+        LRLDUDRURL
+      output: |
+        35
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input: 
+        file: ./in2.txt
+      output: 
+        file: ./out2.txt
+  
+# Round in which question will be visible
+round: 1
+
+# visible or hidden
+visibility: hidden
