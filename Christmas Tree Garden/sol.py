@@ -32,7 +32,7 @@ for p in range(0,r):
                     print("*", end = "")
                 for k in range(0,-i+b):
                     print(end = " ")
-        print("\r")
+        print()
     for i in range(1,c+1):
         if(i%2!=0):
             for k in range(0,a-1):
@@ -47,5 +47,4 @@ for p in range(0,r):
             for k in range(0,b-1):
                 print(end = " ")
         print(end = ' ')
-    print("\r")
-    print("\r")
+    print()
