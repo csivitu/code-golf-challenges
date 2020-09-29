@@ -7,7 +7,7 @@ description: |
   Problem Statement:
   Your friend has N pieces of chocolate and he is willing to share some with you, but to get those you have to play a game.
   The game goes a follow, you keep dividing the pieces into 2 equal halves(without breaking any piece) and giving one half to 
-  your friend until there is no piece remaining. Whenever you divide the pieces into 2 equal halves u can eat the leftover piece 
+  your friend until there is no piece remaining. Whenever you divide the pieces into 2 equal halves you can eat the leftover piece 
   if any. Find the pieces of chocolate you end up getting to eat.
    
 
