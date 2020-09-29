@@ -1,0 +1,16 @@
+{
+  "name": "deployapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.10.7",
+    "yaml": "^1.10.0"
+  }
+}

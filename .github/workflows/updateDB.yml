@@ -1,0 +1,17 @@
+name: Update challenges on CodeGolf DB
+on:
+  push:
+    branches: [ master ]
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Deploy
+        env:
+          DB_URL: ${{ secrets.DB_URL }}
+        run: |
+          cd $GITHUB_WORKSPACE/.github/deployApp
+          npm install
+          npm run deploy
