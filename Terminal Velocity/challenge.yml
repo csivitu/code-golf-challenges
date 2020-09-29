@@ -1,0 +1,69 @@
+name: Terminal Velocity
+author: roerohan
+
+category: Easy
+
+description: |
+  Problem Statement:
+  You are working on building the world's fastest car. Your mission is to find out the maximum speed you can reach given the weight of the car, the weight of the driver, and the loss in velocity due to drag.
+
+  Assume the following:
+  c is the weight of the car.
+  d is the weight of the driver.
+  u is the maximum speed you can reach without experiencing drag.
+  v is the decrease in velocity experience due to drag.
+
+  u = k1 * 67108864 / (c + d)
+  v = k2 * u
+
+  Input Format:
+  The input is a single line containing the values of 'c', 'd', 'k1', 'k2' separated by spaces like:
+  c d k1 k2
+
+  Output Format:
+  Print the maximum speed that can be reached as a positive integer. (Floating point values must be floor-ed).
+
+  Constraints:
+  400 < c < 4000
+  50 < d < 150
+  0 < k1 < 0.1
+  0 < k2 < 1
+
+  Sample Input:
+  700 100 0.05 0.8
+
+  Sample Output:
+  838
+
+  Explanation:
+  The value of 'u' turns out to be 4194.304 and the value of 'v' is 3355.4432. So the maximum speed would be (4194.304 - 3355.4432) or 838 (floor-ed).
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        700 100 0.05 0.8
+      output: |
+        838
+  hidden:
+    1:
+      input: |
+        1000 132 0.09 0.9
+      output: |
+        533
+    2:
+      input: |
+        700 100 0.05 0.8
+      output: |
+        836
+    3:
+      input: |
+        401 51 0.01 0.1
+      output: |
+        1336
+  
+round: 1
+
+visibility: hidden
