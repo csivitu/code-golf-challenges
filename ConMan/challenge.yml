@@ -6,16 +6,16 @@ category: Easy
 description: |
   Problem Statement:
   Jac is a thief who specializes in breaking into safes. On one particular case, he encounters a safe with a strange combination lock. 
-  The screen would display a series of 'T' numbers and for each number, he had to sum up the digits in the even's or odd's places in the number, subject to a constraint.
-  If the number displayed was in an even or odd row.
-  Print the sum of even digits of a number or an odd number depending if line number is even or odd
+  The screen would display a series of 'T' numbers and for each number he had to sum up the digits in the even or odd places of the number, 
+  subject to if the number was displayed in an even or odd row respectively.
+  Print the sum of even digits of a number or an odd number depending if line number is even or odd. The First line is numbered 1.
 
   Input Format:
   First line contains an integer T, the number of test cases. 
   T lines follow, each line contains a positive integer A. 
 
   Output Format:
-  if T is even, then print the sum of digits in the even positions in A, else if T is odd, print the sum of digits in odd positions in A 
+  If the line number is even, then print the sum of digits in even positions of A, else, print the sum of digits in odd positions of A. 
 
   Constraints:
   1<=A<=10^15
@@ -26,13 +26,13 @@ description: |
     121342
     121342
   Sample Output:
-    7
     6
+    7
 
   Explanation:
-    The left most digit of a number is the first digit and numbering starts from 1.
-    121342 is in row 1, which is an odd numbered row. so the output will be 1+1+4 = 6, which is the sum of digits in the odd places of the number.
-    121342 is in row , which is an even numbered row. so the output would be 2+3+2 = 7 , which is the sum of digits in the even places of the number.
+    The left most digit of a number is the first digit.
+    121342 is in row 1, which is an odd numbered row so the output will be 1+1+4 = 6, which is the sum of digits in the odd places of the number.
+    121342 is in row 2, which is an even numbered row so the output would be 2+3+2 = 7 , which is the sum of digits in the even places of the number.
 
 points: 500
 
