@@ -1,0 +1,69 @@
+name: Groceries
+author: Ritwik
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Pintu's mother is super tired of the daily chroes and wants to send Pintu to the supermarket to get some groceries. But unfortunately 
+  she does not trust him as she knows that if she doesnt keep an eye on him, he will buy junk snacks with the money. So Pintu's mother decides
+  to give him a list of N ID numbers of the items and asks him to get as many items as he can carry(Minimum 1). She wants him to report the M items bought by 
+  him so that she can make sure that he doesnt eat outside junk food during the pandemic. Help Pintu's mother by finding out if all the items 
+  bought by Pintu fall in the list which she gave earlier. Duplicate items are written multiple times.
+Input Format:
+  First line contains an integer K, the number of test cases.
+  The next lines contains 2 integers N and M. The following 2 lines contain the N ItemID's and M ItemID's respectively.
+Output Format:
+  For each test case, print 'YES' if all the items that Pintu got are from his mother's list and print 'NO'
+  if there are 1 or more items that are different.
+Contraints:
+  1<=t<=10^2
+  1<=N<=10^3
+  1<=M<=10^3
+Sample Input:
+  2
+  4 3
+  22 33 23 1
+  1 33 22
+  2 3
+  2 4
+  3 2 4
+Sample Output:
+  YES
+  NO
+Explaination:
+  In the first test case, the item's to get have id's 22,33,23 and 1. Pintu gets 1 33 22 which are all in the list.
+  Due to this we print 'YES'.
+  For the second test case, the item's to get have id's 2 and 4. Pintu get more than 2 items which means that he got 
+  extra items. Due to this 'NO' would be printed.
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        1
+        3 2
+        1 1 2
+        1 1
+        
+        
+      output: |
+        YES
+        
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
