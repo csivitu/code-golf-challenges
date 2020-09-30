@@ -64,8 +64,7 @@ description: |
   4
 
 
-  Sample
-  Output:                                                                                                                                          
+  Sample Output:                                                                                                                                          
            *    
     *     ***   
    ***   *****  
@@ -90,18 +89,18 @@ description: |
 points: 500
 test_cases:
   sample:
-    '1':
+     1:
       input:
         file: ./in1.txt
       output:
         file: ./out1.txt
   hidden:
-    '1':
+     1:
       input:
         file: ./in2.txt
       output:
         file: ./out2.txt
-    '2':
+     2:
       input:
         file: ./in3.txt
       output:
