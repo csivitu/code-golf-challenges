@@ -113,7 +113,11 @@ async function main() {
         promisesToKeep.push((new Questions(question)).save());
         promisesToKeep.push((new TestCases(testCase)).save());
     });
-    await Promise.all(promisesToKeep);
+    try {
+        await Promise.all(promisesToKeep);
+    } catch {
+        /* mongoose must have rejected a document which did't follow the schema */
+    }
     mongoose.disconnect();
 }
 main();
