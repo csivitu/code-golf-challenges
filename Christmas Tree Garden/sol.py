@@ -47,4 +47,4 @@ for p in range(0,r):
             for k in range(0,b-1):
                 print(end = " ")
         print(end = ' ')
-    print()
+    print("\n")
