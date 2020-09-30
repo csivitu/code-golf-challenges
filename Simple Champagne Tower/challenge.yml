@@ -23,11 +23,22 @@ description: |
   The output is an integer which denotes the number of completely filled champagne glasses after T seconds.
 
   Sample Input:
-  4
+  3
   2
 
   Sample Output:
   1
+  
+  Explanation:
+  The Champagne Tower with N=3 looks like
+      A
+     B C
+    D E F
+  where A...F are champagne glasses. 
+  Given T=2,
+  - When T=1, glass A will be completely filled.
+  - When T=2, glasses B and C will both be half-filled.
+  Hence, after T=2, the number of completely filled champagne glasses=1.
                  
 points: 500
 
