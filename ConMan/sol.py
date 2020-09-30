@@ -1,17 +1,12 @@
-
 def s(x,i):
-    a=0
-    b=0
-    c=0
-    while(x):
-        if(c%2):
-            a+=x%10
-        else:
-            b+=x%10
-       
-        x//=10
-        c+=1
-    return a if i%2 else b
+	o=0
+	e=0
+	for j in range(len(x)):
+		if(j%2):
+			e+=int(x[j])
+		else:
+			o+=int(x[j])
+	return o if i%2 else e
 
 for i in range(int(input())):
-    print(s(int(input()),i+1))
+    print(s(input(),i+1))
