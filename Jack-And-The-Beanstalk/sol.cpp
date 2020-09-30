@@ -1,156 +1,92 @@
-#include <iostream> 
-#include <vector>
+// C++ program to print BST in given range 
+#include<bits/stdc++.h> 
 using namespace std; 
 
-class BST 
+/* A Binary Tree node */
+class TNode 
 { 
-	int data; 
-    int level;
-	BST *left, *right; 
-
 	public: 
-	BST(); 
-	
-	// Parameterized constructor. 
-	BST(int, int); 
-	
-	// Insert function. 
-	BST* Insert(BST *, int, int); 
-	// Inorder traversal. 
-	void Inorder(BST *); 
+	int data; 
+  	int level;
+	TNode* left; 
+	TNode* right; 
 }; 
 
-// Default Constructor definition. 
-BST :: BST() : data(0), level(0), left(NULL), right(NULL){} 
+TNode* newNode(int data, int level); 
 
-// Parameterized Constructor definition. 
-BST :: BST(int value, int l) 
+/* A function that constructs Balanced 
+Binary Search Tree from a sorted array */
+TNode* sortedArrayToBST(int arr[], 
+						int start, int end, int level=0) 
 { 
-	data = value; 
-    level = l;
-	left = right = NULL; 
-} 
+	/* Base Case */
+	if (start > end) 
+	return NULL; 
 
-// Insert function definition. 
-BST* BST :: Insert(BST *root, int value, int level=0) 
-{ 
-	if(!root) 
-	{ 
-        
-		// Insert the first node, if root is NULL. 
-		return new BST(value, level); 
-	} 
-
-    if(level&1){
-        //odd
-    if(value > root->data) 
-	{ 
-		// Insert right node data, if the 'value' 
-		// to be inserted is greater than 'root' node data. 
-		
-		// Process right nodes. 
-		root->left = Insert(root->left, value, ++level); 
-	} 
-	else
-	{ 
-		// Insert left node data, if the 'value' 
-		// to be inserted is greater than 'root' node data. 
-		
-		// Process left nodes. 
-		root->right = Insert(root->right, value, ++level); 
-	} 
-
-
-    }
-    else{
-        //even = NOTMAL BST
-
-
-        if(value > root->data) 
-        { 
-            // Insert right node data, if the 'value' 
-            // to be inserted is greater than 'root' node data. 
-            
-            // Process right nodes. 
-            root->right = Insert(root->right, value, ++level); 
-        } 
-        else
-        { 
-            // Insert left node data, if the 'value' 
-            // to be inserted is greater than 'root' node data. 
-            
-            // Process left nodes. 
-            root->left = Insert(root->left, value, ++level); 
-        } 
-
-    }
-
+	/* Get the middle element and make it root */
+	int mid = (start + end)/2; 
+	TNode *root = newNode(arr[mid],level); 
 	
-	// Return 'root' node, after insertion. 
+  	if(level&1){
+     	/* Recursively construct the left subtree 
+		and make it left child of root */
+		root->right = sortedArrayToBST(arr, start, mid - 1,++level); 
+
+		/* Recursively construct the right subtree 
+		and make it right child of root */
+		root->left = sortedArrayToBST(arr, mid + 1, end,level); 
+    }
+  	else{
+      	/* Recursively construct the left subtree 
+		and make it left child of root */
+		root->left = sortedArrayToBST(arr, start, mid - 1,++level); 
+	
+		/* Recursively construct the right subtree 
+		and make it right child of root */
+		root->right = sortedArrayToBST(arr, mid + 1, end,level); 
+    }
+
 	return root; 
 } 
 
-// Inorder traversal function. 
-// This gives data in sorted order. 
-void BST :: Inorder(BST *root) 
+/* Helper function that allocates a new node 
+with the given data and NULL left and right 
+pointers. */
+TNode* newNode(int data, int level) 
 { 
-	if(!root) 
-	{ 
-		return; 
-	} 
-	Inorder(root->left); 
-	cout << root->data << " ";
-    // cout << root->data << ", level: "<<root->level<<endl; 
-	Inorder(root->right); 
+	TNode* node = new TNode(); 
+  	node->level = level;
+	node->data = data; 
+	node->left = NULL; 
+	node->right = NULL; 
+
+	return node; 
 } 
 
-// Driver code 
+void Inorder(TNode* node) 
+{ 
+    if (node == NULL)  
+        return;  
+	Inorder(node->left); 
+	cout << node->data << " ";
+	Inorder(node->right); 
+} 
+
+
+// Driver Code 
 int main() 
 { 
-	cin.tie(0);
-	cout.tie(0);
-	std::ios::sync_with_stdio(false);
     int n;
-	BST b, *root = NULL; 
-
     cin>>n;
-
-    int first_ele;
-    cin>>first_ele;
-
-	root= b.Insert(root, first_ele); 
-    
-    for(int i=1;i<n;i++){
-        int x;
-        cin>>x;
-	    b.Insert(root, x); 
-        
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
-	// root = b.Insert(root, 50); 
-	// b.Insert(root, 20); 
-	// b.Insert(root, 40); 
-	// b.Insert(root, 70); 
-	// b.Insert(root, 60); 
-	// b.Insert(root, 80); 
 
-    // b.Insert(root, 90); 
-    // b.Insert(root, 15); 
-    // b.Insert(root, 21); 
-    // b.Insert(root, 45); 
-
-    // b.Insert(root, 55); 
-    // b.Insert(root, 17); 
-    // b.Insert(root, 47); 
-
-	b.Inorder(root); 
-    cout<<"\n";
-
-    // construct a new BST and call it JTree
-    // BST jt , *jtroot = NULL;
-
-
+	TNode *root = sortedArrayToBST(arr, 0, n-1,0); 
+	Inorder(root); 
 
 	return 0; 
 } 
 
-// This code is contributed by pkthapa 
+// This code is contributed by rathbhupendra

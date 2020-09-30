@@ -11,7 +11,7 @@ description: |
   
   
   His father explained that a BeanStalk is a modified BST such that the sorting condition is inverted at every row. Jack's father tells him that if he is able to find
-  the post-order of the BeanStalk, and plant the seeds in the same order, a huge tree will grow which will make him very rich.
+  the post-order of the BeanStalk, and plant the seeds in the same order, a huge tree will grow which will make him very rich. Before he could start, his father mentioned that a BeanStalk was balanced.
 
   Jack is given the inorder traversal of a BST. Help Jack find the Inorder traversal of a BeanStalk so that he gets rich. 
   
@@ -30,21 +30,29 @@ description: |
   -(10^9) <= A <= 10^9
 
   Sample Input:
-    10
+    7
     20 30 40 50 60 70 80  
 
   Sample Output:
-    20 40 60 80 70 50 30 
+    40 30 20 50 80 70 60  
 
 
   Explanation:
+    From the input, we construct a BST (as shown below)
               50 
            /     \ 
           30      70 
          /  \    /  \ 
        20   40  60   80 
-
-    the output will be 20 30 40 50 60 70 80 
+    
+    From this BST, we can construct a Balanced Beanstalk
+          50
+        /   \
+       30   70
+      / \   | \
+    40  20 80 60
+    
+    the output will be 40 30 20 50 80 70 60
 
 points: 500
 
@@ -52,10 +60,10 @@ test_cases:
   sample:
     1:
       input: |
-        10
+        7
         20 30 40 50 60 70 80
       output: |
-        20 40 60 80 70 50 30
+        40 30 20 50 80 70 60 
   hidden:
     1:
       input:
@@ -72,6 +80,16 @@ test_cases:
         file: ./in3.txt
       output:
         file: ./out3.txt 
+    4:
+      input:
+        file: ./in4.txt
+      output:
+        file: ./out4.txt 
+    5:
+      input:
+        file: ./in5.txt
+      output:
+        file: ./out5.txt 
    
   
 round: 1
