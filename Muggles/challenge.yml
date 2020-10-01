@@ -1,0 +1,61 @@
+name: Groceries
+author: Ritwik
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Its finally time for the stdents of Hogwarts to return for another year of Witchcraft and Wizardry. Unfortunately COVID is still speading and just like the muggles, the students of Hogwarts 
+  also need to take precautions. For their portions class, Professor Snape needs to hand out portions to all the students. He has made N boxes on the floor which are each 1 meter apart. Snape 
+  wants the students to maintain social distancing and stand at a distance of minimum 6 meters from each other. Help Professor Snape to find out if the rules of social distancing are being followed or not.
+Input Format:
+  First line contains an integer K, the number of test cases.
+  The next lines contains an integers N which denotes the number of boxes. The following line contains N integers, 0 if the box is empty and 1 if a student is standing in a box.
+Output Format: 
+  For each test case, print 'YES' if the rules of social distancing are maintained and print 'NO' if the rules are disobeyed.
+Contraints:
+  1<=t<=10^2
+  1<=N<=10^4
+Sample Input:
+  3
+  3
+  1 0 1
+  7
+  1 0 0 0 0 0 1
+  11
+  0 1 0 0 0 0 0 1 0 0 1
+Sample Output:
+  NO
+  YES
+  NO
+Explaination:
+  For the first test case, the first and third spots are occupied and the distance between them is 2 meters.
+  For the second test case, the first and seventh spots are occupied and the distance between them is 6 meters which is allowed.
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        1
+        8
+        1 0 0 0 0 0 0 1  
+      output: |
+      YES
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
+
+
