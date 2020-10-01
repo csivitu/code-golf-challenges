@@ -7,7 +7,7 @@ description: |
   Problem Statement:
   Its finally time for the stdents of Hogwarts to return for another year of Witchcraft and Wizardry. Unfortunately COVID is still speading and just like the muggles, the students of Hogwarts 
   also need to take precautions. For their portions class, Professor Snape needs to hand out portions to all the students. He has made N boxes on the floor which are each 1 meter apart. Snape 
-  wants the students to maintain social distancing and stand at a distance of minimum 6 meters from each other. Help Professor Snape to find out if the rules of social distancing are being followed or not.
+  wants the students to maintain social distancing and stand at a distance of minimum 6 meters from each other. Help Professor Snape to verify if the rules of social distancing are being followed or not.
 Input Format:
   First line contains an integer K, the number of test cases.
   The next lines contains an integers N which denotes the number of boxes. The following line contains N integers, 0 if the box is empty and 1 if a student is standing in a box.
