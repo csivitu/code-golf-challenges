@@ -8,7 +8,7 @@ category: Medium
 # data that the user needs to see.
 description: |
   Problem Statement:
-  Anoushka found a strage piece of tech that does some weird calculations. After playing around with the device she discovered that the device 
+  Anoushka found a strange piece of tech that does some weird calculations. After playing around with the device she discovered that the device 
   mutiplies the number by 2 on pressing one button and divides by 6 on pressing another. Anoushka for some reason decides to obtain the number 1
   from the functinality provided above. Your task is to help her find if it is possible to obtain the number 1 from the number displayed on the 
   screen(n). If it is possible, you also have to find the minimum number of button presses required to reach the goal.   
