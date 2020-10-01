@@ -33,6 +33,8 @@ description: |
   Not awesome
   Awsome
 
+  Note: Please make sure there are no infinite loops in the code you submit.
+
 points: 500
 
 test_cases: 
