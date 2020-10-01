@@ -9,19 +9,19 @@ category: Easy
 description: |
   Problem Statement:
   Your next task on The Skeld is as follows-
-  Go to the MedBay and retrieve the bag of mints. You will get three numbers alongwith the bag, ```mint``` , ```tic``` and ```tac``` . You have to check if it 
-  is possible to reduce the number of mints (stored in ```mint```) to 1 using the following operations only:
-  - Multiply ```mint``` by ```tic```
-  - Divide ```mint``` by ```tac```
-  If it is possible to reduce the value of ```mint``` to 1, print the minimum number of operations required to do so. Otherwise, print ```-1```.
+  Go to the MedBay and retrieve the bag of mints. You will get three numbers alongwith the bag, 'mint', 'tic' and 'tac' . You have to check if it 
+  is possible to reduce the number of mints (stored in 'mint') to 1 using the following operations only:
+  - Multiply 'mint' by 'tic'
+  - Divide 'mint' by 'tac'
+  If it is possible to reduce the value of 'mint' to 1, print the minimum number of operations required to do so. Otherwise, print '-1'.
 
   Input Format:
-  The first line of the input is an integer ```mint``` which is equal to the number of mints in the bag.
-  The second line of the input is an integer ```tic``` .
-  The third line of the input is an integer ```tac``` .
+  The first line of the input is an integer 'mint' which is equal to the number of mints in the bag.
+  The second line of the input is an integer 'tic' .
+  The third line of the input is an integer 'tac' .
 
   Output Format:
-  The output is an integer which denotes the minimum number of operations required to reduce the value of ```mint``` to 1 if it is possible and ```-1``` if it is
+  The output is an integer which denotes the minimum number of operations required to reduce the value of 'mint' to 1 if it is possible and '-1' if it is
   not possible.
 
   Sample Input:
