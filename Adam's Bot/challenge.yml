@@ -16,22 +16,24 @@ description: |
   up at. The initial co-ordinates of the bot are (0,0)  
 
   Input Format:
-  The first line of the input will be an integer (n) which will denote the number of commands.
-  The second line of the input will be signal commands which be a string.(s).  
+  The first line of the input will be an integer N which will denote the number of commands.
+  The second line of input will be a string of length N comprising of 'U','D','L' and 'R'.
 
   Output Format:
-  The output will be an imteger denoting the number of possible co-ordinates the bot could end up at. 
+  The output will be an integer denoting the number of possible co-ordinates the bot could end up at. 
 
   Constraints:
-  1<=n<=10^5
-  1<len(s)<=10^5
+  1<=N<=10^5
 
   Sample Input:
-  7
-  LLDRUDR 
+  4
+  RRDU 
 
   Sample Output:
-  20
+  9
+  
+  Explanation:
+  Some of the final possible co-ordinates can be (2,0), (1,1), (1,-1), (0,0) etc.
 
 points: 500
 
