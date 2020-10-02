@@ -1,0 +1,76 @@
+name: Candy Store
+author: SrishtiGohain
+
+# Category can be Easy, Medium or Hard
+category: Easy
+
+# This will be visible on the frontend, should consist of all
+# data that the user needs to see.
+description: |
+  Problem Statement:
+  There is an infinite line of Candy Stores in front of you. All of the stores are numbered- Store 0, Store 1, Store 2.... and so on. You have to pick your
+  order from Candy Store S. However, to reach the correct store you have to either skip forward or backward by p or q stores multiple times. You are standing 
+  in front of Candy Store 0 right now. Can you successfully pick your order from Candy Store S? If you can, print 1. If not, print 0.
+
+  Input Format:
+  The first line of the input is an integer 'S' which denotes the Candy Store where you should end up at.
+  The second line of the input is an integer 'p' .
+  The third line of the input is an integer 'q' .
+
+  Output Format:
+  The output is an integer : 1 or 0, to show if you could successfully pick your order from Candy Store S or not. 
+
+  Sample Input:
+  11
+  2
+  5
+
+  Sample Output:
+  1
+  
+  Explanation:
+  You have to go to Candy Store 11.
+  The steps are as follows,
+  - Skip forward to Candy Store 5 (+5)
+  - Skip forward to Candy Store 10 (+5)
+  - Skip forward to Candy Store 15 (+5)
+  - Skip backwards to Candy Store 13 (-2)
+  - Skip backwards to Candy Store 11 (-2)
+  11= 5+5+5-2-2
+  So, the output is 1 as it is possible to reach Candy Store 11. 
+
+
+                 
+points: 500
+
+# Test cases are of 2 types - sample and hidden. Test cases are numbered.
+# Each test case has an `input` and an `output`. The input and output may
+# be multiline strings or optionally they can have a `file` attribute with
+# the path of the file from which the input must be taken.
+test_cases:
+  sample:
+    1:
+      input: |
+        11
+        2
+        4
+      output: |
+        0
+  hidden:
+    1:
+      input: 
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt
+
+round: 1
+
+visibilty: hidden
+
+
+
