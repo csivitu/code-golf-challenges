@@ -1,0 +1,66 @@
+name: Monotonic arrays
+author: alias-rahil
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Given an array A containing N integers.
+  The task is to check whether the array is Monotonic or not.
+  An array is monotonic if it is either monotone increasing or monotone decreasing.
+  An array A is monotone increasing if for all i <= j, A[i] <= A[j].
+  An array A is monotone decreasing if for all i <= j, A[i] >= A[j].
+  Print true if the given array A is monotonic else print false.
+
+  Input Format:
+  First line will contain T, number of test cases. Then the test cases follow.
+  Each a space seperated array of numbers as input.
+
+  Constraints:
+  1 ≤ T ≤ 10000
+  1 ≤ N ≤ 10000
+  1 ≤ A[i] ≤ 10000
+
+  Output Format:
+  For each test case, output in a single line either true or false.
+
+  Sample Input:
+  2
+  6 5 4 4
+  5 15 20 10
+
+  Sample Output:
+  true
+  false
+
+  Explanation:
+  First test case array is monotone increasing.
+  The second one is neither monotone increasing nor monotone decreasing.
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        2
+        6 5 4 4
+        5 15 20 10
+      output: |
+        true
+        false
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt   
+  
+round: 1
+
+visibility: hidden
