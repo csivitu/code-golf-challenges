@@ -29,7 +29,6 @@ ans=0
 seq=[0 for _ in range(10**5 + 1)]
 log2=math.log(2)
 
-ans=0
 for i in range(2,10**5 +1):
 	ans+=(1+i*log2)/math.log(i)
 	seq[i]=ans
