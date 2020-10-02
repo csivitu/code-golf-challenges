@@ -12,7 +12,7 @@ description: |
    
 
   Input Format:
-  First line contains an integer n, the height of the triangles. 
+  The input is an integer n, the height of the 2 triangles. 
 
   Output Format:
   The negative space hexagram with a line of asterisks above, below and on either sides of it. 
