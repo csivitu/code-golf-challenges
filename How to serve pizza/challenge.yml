@@ -2,7 +2,7 @@ name: How to serve Pizza
 author: Shivansh S.
 
 # Category can be Easy, Medium or Hard
-category: Medium
+category: Easy
 
 # This will be visible on the frontend, should consist of all
 # data that the user needs to see.
@@ -13,15 +13,14 @@ description: |
   being the number of cuts he make in the pizza (n). Your task here is to cut the pizza into maximun number of pieces with the given number of cuts.
 
   Input Format:
-  The first line of input is the number of test cases (i)
-  The next i lines contain the number n (number of cuts John can make in the pizza).  
+  The first line of input is the number of test cases T.
+  T lines follow, each line contains a positive integer N (number of cuts John can make in the pizza).  
 
   Output Format:
-  The output contains i lines with each line containing a single number which corresponds to the maximum number of pieces that can be obtained by 
-  making n cuts in the pizza  
+  For each test case print a single line containing the maximum number of pieces that can be obtained by making N cuts in the pizza.  
 
   Constraints:
-  1<=i<=10^5
+  1<=T<=10^5
   1<=n<=10^6 
 
   Sample Input:
@@ -79,7 +78,7 @@ test_cases :
         file: ./out2.txt
   
 # Round in which question will be visible
-round: 3
+round: 1
 
 # visible or hidden
 visibility: hidden
