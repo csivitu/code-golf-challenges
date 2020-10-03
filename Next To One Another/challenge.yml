@@ -10,7 +10,7 @@ description: |
 
   Input Format:
   First line contains an integer N denoting the length of string.
-  Second line contains the string.
+  Second line contains the string consiting of lowercase letters.
 
   Output Format:
   For each test case print a single line containing the maximum number of adjacent letters without repetition in a substring of the string.
