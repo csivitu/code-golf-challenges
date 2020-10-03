@@ -18,8 +18,8 @@ description: |
 
   Constraints:
   1 ≤ T ≤ 10
-  1 ≤ N ≤ 10000
-  1 ≤ A[i] ≤ 10000
+  1 ≤ N ≤ 100000
+  1 ≤ A[i] ≤ 100000
 
   Output Format:
   For each test case, output in a single line either true or false.
