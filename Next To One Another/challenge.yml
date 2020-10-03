@@ -1,0 +1,60 @@
+name: Next to one another
+author: parthkgh24
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Write a program to find the longest series of adjacent letters in a string without spaces and without repetition.
+   
+
+  Input Format:
+  A string n which takes the length of string as input. 
+  A string a which takes the string worked on as input.
+
+  Output Format:
+  For each test case print a single line containing the maximum number of adjacent letters without repetition in a substring of the string.
+
+  Constraints:
+  1<=n<=10^3 
+
+  Sample Input:
+  22
+  hithisisanicebcediafhg 
+
+  Sample Output:
+  9
+
+  Explanation:
+  In this test case, we input 22 and  hithisisanicebcediafhg , which contains the substring icebcediafhg, which is the longest substring with adjacent letters from a to i. These are 9 letters, so the output would be 9.
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        22
+        hithisisanicebcediafhg
+      output: |
+        9
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt 
+    3:
+      input:
+        file: ./in3.txt
+      output:
+        file: ./out3.txt  
+  
+round: 1
+
+visibility: hidden
