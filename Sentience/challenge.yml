@@ -18,7 +18,7 @@ description: |
   T lines follow, each line contains a positive integer n, the number of days after the robot was built.
 
   Output Format:
-  For each test case print a single line containing the number of robots in the army after the nth day of the robot being built.
+  For each test case print a single line containing the number of robots in the army after the nth day of the robot being built. (print mod(10^9+7) of the number of robots)
 
   Constraints:
   1<=T<=10
@@ -35,10 +35,10 @@ description: |
 
   Explanation:
   At the end of the first day after the robot was made, he will be the only robot in the army (It took him that one 
-  day to develop consciousness). 
+  day to develop consciousness). And 1 mod (10^9+7) is equal to 1.
   At the end of the 5 days the first robot would have built 4 other robots. Out of the 4, the one built first 
   would have waited a day and then built 2 other robots, and the second, 1. Therefore, incuding the first robot, 
-  we have 1+4+2+1 = 8 robots in the army.
+  we have 1+4+2+1 = 8 robots in the army ( 8 mod (10^9+7) is equal to 8).
 
 points: 500
 
