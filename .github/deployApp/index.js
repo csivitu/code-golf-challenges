@@ -71,47 +71,51 @@ async function main() {
         /* collections might not exist */
     }
     challenges.forEach(async (challenge) => {
-        const questionData = parse(fs.readFileSync(join(rootDir, challenge, 'challenge.yml')).toString());
-        const question = {
-            questionName: questionData.name,
-            question: questionData.description,
-            points: questionData.points,
-            round: questionData.round,
-            hidden: questionData.visibility === 'hidden' ? true : false,
-        };
-        const testCasesInputs = [];
-        const testCasesOutputs = [];
-        Object.keys(questionData.test_cases.sample).forEach((sample) => {
-            if (typeof(questionData.test_cases.sample[sample]['input']) === "string") {
-                testCasesInputs.push(questionData.test_cases.sample[sample]['input']);
-            } else {
-                testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['input']['file'])).toString());
-            }
-            if (typeof(questionData.test_cases.sample[sample]['output']) === "string") {
-                testCasesOutputs.push(questionData.test_cases.sample[sample]['output']);
-            } else {
-                testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['output']['file'])).toString());
-            }
-        });
-        Object.keys(questionData.test_cases.hidden).forEach((hidden) => {
-            if (typeof(questionData.test_cases.hidden[hidden]['input']) === "string") {
-                testCasesInputs.push(questionData.test_cases.hidden[hidden]['input']);
-            } else {
-                testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['input']['file'])).toString());
-            }
-            if (typeof(questionData.test_cases.hidden[hidden]['output']) === "string") {
-                testCasesOutputs.push(questionData.test_cases.hidden[hidden]['output']);
-            } else {
-                testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['output']['file'])).toString());
-            }
-        });
-        const testCase = {
-            questionName: questionData.name,
-            inputs: testCasesInputs,
-            outputs: testCasesOutputs,
-        };
-        promisesToKeep.push((new Questions(question)).save());
-        promisesToKeep.push((new TestCases(testCase)).save());
+        try {
+            const questionData = parse(fs.readFileSync(join(rootDir, challenge, 'challenge.yml')).toString());
+            const question = {
+                questionName: questionData.name,
+                question: questionData.description,
+                points: questionData.points,
+                round: questionData.round,
+                hidden: questionData.visibility === 'hidden' ? true : false,
+            };
+            const testCasesInputs = [];
+            const testCasesOutputs = [];
+            Object.keys(questionData.test_cases.sample).forEach((sample) => {
+                if (typeof(questionData.test_cases.sample[sample]['input']) === "string") {
+                    testCasesInputs.push(questionData.test_cases.sample[sample]['input']);
+                } else {
+                    testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['input']['file'])).toString());
+                }
+                if (typeof(questionData.test_cases.sample[sample]['output']) === "string") {
+                    testCasesOutputs.push(questionData.test_cases.sample[sample]['output']);
+                } else {
+                    testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['output']['file'])).toString());
+                }
+            });
+            Object.keys(questionData.test_cases.hidden).forEach((hidden) => {
+                if (typeof(questionData.test_cases.hidden[hidden]['input']) === "string") {
+                    testCasesInputs.push(questionData.test_cases.hidden[hidden]['input']);
+                } else {
+                    testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['input']['file'])).toString());
+                }
+                if (typeof(questionData.test_cases.hidden[hidden]['output']) === "string") {
+                    testCasesOutputs.push(questionData.test_cases.hidden[hidden]['output']);
+                } else {
+                    testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['output']['file'])).toString());
+                }
+            });
+            const testCase = {
+                questionName: questionData.name,
+                inputs: testCasesInputs,
+                outputs: testCasesOutputs,
+            };
+            promisesToKeep.push((new Questions(question)).save());
+            promisesToKeep.push((new TestCases(testCase)).save());
+        } catch {
+            /* yaml didn't parse correctly */
+        }
     });
     try {
         await Promise.all(promisesToKeep);
