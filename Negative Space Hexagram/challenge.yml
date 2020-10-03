@@ -1,0 +1,87 @@
+name: Negative Space Hexagram
+author: Arushi
+
+category: Easy
+
+description: |
+  Problem Statement:
+  Write a program to print a hexagram in negative space (made of whitespaces and asterisks). Take your input as the size of each 
+  triangle in the hexagram and print a line of asterisks above, below and on either sides of the hexagram. You will notice that the 
+  base of the inverted triangle starts from the n/2th (for even) and (n-1)/2th (for odd) line from the top of the vertical triangle, 
+  and vice versa.
+   
+
+  Input Format:
+  The input is an integer n, the height of the 2 triangles. 
+
+  Output Format:
+  The negative space hexagram with a line of asterisks above, below and on either sides of it. 
+
+  Constraints:
+  1<=n<=50
+
+  Sample Input:
+  8 
+
+  Sample Output:
+  *****************
+  ******** ********
+  *******   *******
+  ******     ******
+  *               *
+  **             **
+  ***           ***
+  **             **
+  *               *
+  ******     ******
+  *******   *******
+  ******** ********
+  *****************
+
+  Explanation:
+  The input is 8, which is the length of the triangle from the top. We have a line of stars at the top and the bottom of 
+  the hexagram as well as on either sides. The first triangle (made of whitespaces) starts from the 2nd line and continues 
+  till the 9th and the second triangle starts from the 5th line and moves till the 12th.
+
+points: 500
+
+test_cases: 
+  sample:
+    1:
+      input: |
+        8
+      output: |
+        *****************
+        ******** ********
+        *******   *******
+        ******     ******
+        *               *
+        **             **
+        ***           ***
+        **             **
+        *               *
+        ******     ******
+        *******   *******
+        ******** ********
+        *****************
+
+  hidden:
+    1:
+      input:
+        file: ./in1.txt
+      output:
+        file: ./out1.txt
+    2:
+      input:
+        file: ./in2.txt
+      output:
+        file: ./out2.txt
+    3:
+      input:
+        file: ./in3.txt
+      output:
+        file: ./out.txt   
+  
+round: 1
+
+visibility: hidden
