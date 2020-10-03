@@ -24,6 +24,10 @@ description: |
   Output Format:
   For each test case print a single line containing the minimum number of operations required to reduce the value of 'mint' to 1 if it is possible and '-1' if it is
   not possible.
+  
+  Constraints:
+  1<=T<=10000
+  1<=mint,tic,tac<=10^18
 
   Sample Input:
   1
