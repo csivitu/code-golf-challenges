@@ -5,15 +5,15 @@ category: Easy
 
 description: |
   ## Problem Statement:
-  Jack was playing a game in the village fair and won some seeds and a weird map. The seeds had numbers on them and the map had a sequence of numbers. Jack did not know that the numbers meant. He went to his father who told him that the seeds are or a legendary tree called a BeanStalk. Jack knew about a BST, but never did he hear about a BeanStalk. His father explained that a BeanStalk is a modified BST such that the sorting condition is inverted at every row. Jack's father tells him that if he is able to find the post-order of the BeanStalk, and plant the seeds in the same order, a huge tree will grow which will make him very rich. Before he could start, his father mentioned that a BeanStalk was balanced. Jack is given the inorder traversal of a BST. Help Jack find the Inorder traversal of a BeanStalk so that he gets rich. 
+  Jack was playing a game in the village fair and won some seeds and a weird map. The seeds had numbers on them and the map had a sequence of numbers. Jack did not know that the numbers meant. He went to his father who told him that the seeds are of a legendary tree called a BeanStalk. Jack knew about a BST, but never did he hear about a BeanStalk. His father explained that a Balanced BeanStalk is a modified Balanced BST such that for nodes at odd depths the greater of the child nodes is on the right and smaller one on the left.  Jack's father tells him that if he is able to find the inorder of the BeanStalk, and plant the seeds in the same order, a huge tree will grow which will make him very rich. Jack is given the inorder traversal of a BST. Help Jack find the Inorder traversal of the Balanced BeanStalk formed from the inorder sequence of BST. 
   
 
   ## Input Format:
-  The first line contains the +ve number 'n' , which denotes the number of elements of the BeanStalk. 
-  The next line contains the elements, one by one, of the inorder traversal of a BST .
+  The first line contains the +ve number 'n' , which denotes the number of elements of the Balanced BeanStalk. 
+  The second line contains the inorder traversal of a BST .
 
   ## Output Format:
-  Inorder traversal of BeanStalk separated by spaces
+  A single line containing spaces integers representing the Inorder traversal of the Balanced BeanStalk.
   
   
 
