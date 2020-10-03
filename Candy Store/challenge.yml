@@ -20,6 +20,10 @@ description: |
 
   Output Format:
   The output is an integer : 1 or 0, to show if you could successfully pick your order from Candy Store S or not. 
+  
+  Constraints:
+  1<T<=10000
+  1<=S,p,q<=10^18
 
   Sample Input:
   1
