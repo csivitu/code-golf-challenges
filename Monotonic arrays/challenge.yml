@@ -17,7 +17,7 @@ description: |
   Each a space seperated array of numbers as input.
 
   Constraints:
-  1 ≤ T ≤ 10000
+  1 ≤ T ≤ 10
   1 ≤ N ≤ 10000
   1 ≤ A[i] ≤ 10000
 
