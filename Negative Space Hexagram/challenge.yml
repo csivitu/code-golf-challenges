@@ -80,7 +80,7 @@ test_cases:
       input:
         file: ./in3.txt
       output:
-        file: ./out.txt   
+        file: ./out3.txt   
   
 round: 1
 
