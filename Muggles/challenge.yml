@@ -48,7 +48,7 @@ test_cases:
         8
         1 0 0 0 0 0 0 1  
       output: |
-      YES
+        YES
   hidden:
     1:
       input:
