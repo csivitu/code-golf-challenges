@@ -1,6 +1,6 @@
-a = input().replace(' ','')
+n= input()
+a = input()
 a = ''.join(e for e in a if e.isalpha())
-print(a)
 b =[]
 c=1
 d=0
