@@ -4,42 +4,40 @@ author: roerohan
 category: Easy
 
 description: |
-  Problem Statement:
-  You are working on building the world's fastest car. Your mission is to find out the maximum speed you can reach given the weight of the car, the weight of the driver, and the loss in velocity due to drag.
+  ## Problem Statement:
+  You are working on building the world's fastest car. Your mission is to find out the maximum speed you can reach given the weight of the car, the weight of the driver, and the loss in velocity due to drag. Assume the following:
 
-  Assume the following:
   c is the weight of the car.
   d is the weight of the driver.
   u is the maximum speed you can reach without experiencing drag.
   v is the decrease in velocity experience due to drag.
   T is the no. of test cases.
-
   u = k1 * 67108864 / (c + d)
   v = k2 * u
 
-  Input Format:
+  ## Input Format:
   The first line contains the no. of test cases.
   For each test case, the input is a single line containing the values of 'c', 'd', 'k1', 'k2' separated by spaces like:
   c d k1 k2
 
-  Output Format:
+  ## Output Format:
   For each test case, print the maximum speed that can be reached as a positive integer. (Floating point values must be floor-ed).
 
-  Constraints:
+  ## Constraints:
   1 <= T <= 100000
   400 < c < 4000
   50 < d < 150
   0 < k1 < 0.1
   0 < k2 < 1
 
-  Sample Input:
+  ## Sample Input:
   1
   700 100 0.05 0.8
 
-  Sample Output:
+  ## Sample Output:
   838
 
-  Explanation:
+  ## Explanation:
   The value of 'u' turns out to be 4194.304 and the value of 'v' is 3355.4432. So the maximum speed would be (4194.304 - 3355.4432) or 838 (floor-ed).
 
 points: 500

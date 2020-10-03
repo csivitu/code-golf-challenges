@@ -4,44 +4,38 @@ author: Ritwik
 category: Easy
 
 description: |
-  Problem Statement:
-  Harshit is tired of the monotonous life of going for classes and needs a long awaited break. 
-  To switch things up, he starts attending class in a fun way. If he attends the class on a particular day, 
-  then his atendance becomes 1 and if he doesnt attend the class it becomes 0. Every odd week, the values 
-  for Monday, Wednesday and Friday are flipped and for every even week, the values of Tuesday and Thursday are 
-  flipped(Assume a 5 day working week). Help Harshit to find the longest sequence of holidays that he can take 
-  in given N weeks. 
+  ## Problem Statement:
+  Harshit is tired of the monotonous life of going for classes and needs a long awaited break. To switch things up, he starts attending class in a fun way. If he attends the class on a particular day, then his atendance becomes 1 and if he doesnt attend the class it becomes 0. Every odd week, the values for Monday, Wednesday and Friday are flipped and for every even week, the values of Tuesday and Thursday are flipped(Assume a 5 day working week). Help Harshit to find the longest sequence of holidays that he can take in given N weeks. 
    
 
-  Input Format:
+  ## Input Format:
   First line contains an integer T, the number of test cases taken.
   The first line of each test case contains N, the time duration(in weeks) in which we need to find the longest sequence of holidays.
   The second line of each test case contains 5 integers for the attendance of week 0. (1 for present and 0 for absent)
   
-  Output Format:
+  ## Output Format:
   For each test case, print the value for longest sequence of holidays that Harshit gets. (including week 0)
 
-  Constraints:
+  ## Constraints:
   1<=T<=10^4 
   1<=N<=10^6
 
-  Sample Input:
+  ## Sample Input:
   2
   2
   1 0 0 1 1
   3
   1 1 1 0 0
 
-  Sample Output:
+  ## Sample Output:
   2
   3
 
-  Explanation:
+  ## Explanation:
   In the first test case, for week 0 the attendance is 1 0 0 1 1 and the time duration is 2 weeks. For the first week, the values of Monday, Wednesday and Friday are flipped and for the second week, the values of Tuesday and Thursday are flipped.
   1st week: 0 0 1 0 0
   2nd week: 0 1 1 1 0 
-  We see that the longest sequence of 0's is 3(Thursday and friday of week 1 and monday of week 2)
-  For the second case, the attendance of week 0 is 1 1 1 0 0. 
+  We see that the longest sequence of 0's is 3(Thursday and friday of week 1 and monday of week 2) For the second case, the attendance of week 0 is 1 1 1 0 0. 
   1st week: 0 1 0 0 1
   2nd week: 0 0 0 1 1
   3rd week: 1 0 1 1 0

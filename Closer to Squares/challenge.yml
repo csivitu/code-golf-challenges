@@ -4,34 +4,35 @@ author: Soham
 category: Easy
 
 description: |
-  Problem Statement:
-  Given an integer A, you can perform upto 3 operations on it. In each operation A can change to any newA such that-
+  ## Problem Statement:
+  Given an integer A, you can perform upto 3 operations on it. In each operation A can change to any newA such that:
+
   newA - (Any digit in newA) = A
+
   Print the minimum difference between the final value of A and any perfect square. 
    
-  Input Format:
+  ## Input Format:
   First line contains an integer T, the number of test cases. 
   T lines follow, each line contains a positive integer A. 
   
-  Output Format:
+  ## Output Format:
   For each test case print a single line containing the minimum difference. 
   
-  Constraints:
+  ## Constraints:
   1<=T<=10^3
   1<=A<=10^9
   
-  Sample Input:
+  ## Sample Input:
   2
   1
   34
   
-  Sample Output:
+  ## Sample Output:
   0
   1
   
-  Explanation:
-  In the first test case, 1 cannot be converted into any other number through the given operations and its difference from a perfect square is 0.
-  In the second test case, 34 can be converted into 37,41 and 45 by performing upto 3 operations. Minimum difference is when we select 37 as 37-36=1.
+  ## Explanation:
+  In the first test case, 1 cannot be converted into any other number through the given operations and its difference from a perfect square is 0. In the second test case, 34 can be converted into 37,41 and 45 by performing upto 3 operations. Minimum difference is when we select 37 as 37-36=1.
   
 points: 500
 
