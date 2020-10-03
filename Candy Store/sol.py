@@ -10,10 +10,11 @@ def func(S, p, q):
 		return 1
 	else: 
 		return 0
-		 
-S = int(input())
-p = int(input())
-q = int(input())
-print(func(S,p,q)) 
 
-
+k = int(input())
+while(k>0):
+	k=k-1
+	S = int(input())
+	p = int(input())
+	q = int(input())
+	print(func(S,p,q))
