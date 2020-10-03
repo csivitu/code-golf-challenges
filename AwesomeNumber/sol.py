@@ -15,6 +15,6 @@ def isAwsome(n) :
     return False
 for i in range(int(input())):
     if (isAwsome(int(input()))):
-        print("Awsome")
+        print("Awesome")
     else:
-        print("Not Awsome")
+        print("Not Awesome")
