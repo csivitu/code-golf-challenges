@@ -10,10 +10,10 @@ const mongoose = require('mongoose');
 const rootDir = process.env.GITHUB_WORKSPACE;
 mongoose.connect(
     process.env.DB_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-    },
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+},
 );
 const testCasesCollectionName = 'testcases';
 const questionsCollectionName = 'questions';
@@ -56,8 +56,8 @@ const Questions = mongoose.model(questionsCollectionName, new mongoose.Schema({
 
 function getChallenges() {
     return fs.readdirSync(rootDir, {
-            withFileTypes: true,
-        })
+        withFileTypes: true,
+    })
         .filter((dirent) => dirent.isDirectory() && dirent.name[0] !== '.')
         .map((dirent) => dirent.name);
 }
@@ -70,7 +70,7 @@ async function main() {
     } catch {
         /* collections might not exist */
     }
-    challenges.forEach(async (challenge) => {
+    challenges.forEach( (challenge) => {
         try {
             const questionData = parse(fs.readFileSync(join(rootDir, challenge, 'challenge.yml')).toString());
             const question = {
@@ -83,24 +83,24 @@ async function main() {
             const testCasesInputs = [];
             const testCasesOutputs = [];
             Object.keys(questionData.test_cases.sample).forEach((sample) => {
-                if (typeof(questionData.test_cases.sample[sample]['input']) === "string") {
+                if (typeof (questionData.test_cases.sample[sample]['input']) === "string") {
                     testCasesInputs.push(questionData.test_cases.sample[sample]['input']);
                 } else {
                     testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['input']['file'])).toString());
                 }
-                if (typeof(questionData.test_cases.sample[sample]['output']) === "string") {
+                if (typeof (questionData.test_cases.sample[sample]['output']) === "string") {
                     testCasesOutputs.push(questionData.test_cases.sample[sample]['output']);
                 } else {
                     testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.sample[sample]['output']['file'])).toString());
                 }
             });
             Object.keys(questionData.test_cases.hidden).forEach((hidden) => {
-                if (typeof(questionData.test_cases.hidden[hidden]['input']) === "string") {
+                if (typeof (questionData.test_cases.hidden[hidden]['input']) === "string") {
                     testCasesInputs.push(questionData.test_cases.hidden[hidden]['input']);
                 } else {
                     testCasesInputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['input']['file'])).toString());
                 }
-                if (typeof(questionData.test_cases.hidden[hidden]['output']) === "string") {
+                if (typeof (questionData.test_cases.hidden[hidden]['output']) === "string") {
                     testCasesOutputs.push(questionData.test_cases.hidden[hidden]['output']);
                 } else {
                     testCasesOutputs.push(fs.readFileSync(join(rootDir, challenge, questionData.test_cases.hidden[hidden]['output']['file'])).toString());
@@ -113,7 +113,8 @@ async function main() {
             };
             promisesToKeep.push((new Questions(question)).save());
             promisesToKeep.push((new TestCases(testCase)).save());
-        } catch {
+        } catch(e) {
+            console.log(e);
             /* yaml didn't parse correctly */
         }
     });
