@@ -5,18 +5,18 @@ category: Easy
 
 description: |
   Problem Statement:
-  Write a program to find the longest series of adjacent letters in a string without spaces and without repetition.
+  Write a program to find the longest series of adjacent letters in a string without repetition.
    
 
   Input Format:
-  A string n which takes the length of string as input. 
-  A string a which takes the string worked on as input.
+  First line contains an integer N denoting the length of string.
+  Second line contains the string.
 
   Output Format:
   For each test case print a single line containing the maximum number of adjacent letters without repetition in a substring of the string.
 
   Constraints:
-  1<=n<=10^3 
+  1<=n<=400 
 
   Sample Input:
   22
