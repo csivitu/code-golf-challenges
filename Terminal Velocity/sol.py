@@ -23,4 +23,5 @@ def test_solution():
 def codegolf_solution():
     a,b,c,d=map(float,input().split());print(int((2<<25)*(1-d)*c/(a+b)))
 
-codegolf_solution()
+for i in range(int(input())):
+    codegolf_solution()
