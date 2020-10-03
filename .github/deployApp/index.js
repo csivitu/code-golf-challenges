@@ -15,8 +15,8 @@ mongoose.connect(
         useCreateIndex: true,
     },
 );
-const testCasesCollectionName = 'Testcases';
-const questionsCollectionName = 'Questions';
+const testCasesCollectionName = 'testcases';
+const questionsCollectionName = 'questions';
 const TestCases = mongoose.model(testCasesCollectionName, new mongoose.Schema({
     inputs: {
         type: [String],
