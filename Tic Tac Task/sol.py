@@ -26,9 +26,12 @@ def task(mint, tic, tac):
 		return min_steps 
 	else: 
 		return -1
-		 
-mint = int(input())
-tic = int(input())
-tac = int(input())
-print(task(mint, tic, tac)) 
+
+k =  int(input())
+while(k>0):
+	k=k-1
+	mint = int(input())
+	tic = int(input())
+	tac = int(input())
+	print(task(mint, tic, tac)) 
  
