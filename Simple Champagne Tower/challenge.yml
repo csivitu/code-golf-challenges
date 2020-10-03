@@ -29,6 +29,7 @@ description: |
   1<=K<=5000
 
   Sample Input:
+  1
   3
   2
 
@@ -56,6 +57,7 @@ test_cases:
   sample:
     1:
       input: |
+        1
         3
         4
       output: |
