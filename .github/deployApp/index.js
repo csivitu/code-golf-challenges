@@ -67,7 +67,9 @@ async function main() {
     try {
         await mongoose.connection.dropCollection(testCasesCollectionName);
         await mongoose.connection.dropCollection(questionsCollectionName);
-    } catch {
+    } catch(e) {
+        console.log('Try Catch #1');
+        console.log(e);
         /* collections might not exist */
     }
     challenges.forEach( (challenge) => {
@@ -113,6 +115,8 @@ async function main() {
             };
             promisesToKeep.push((new Questions(question)).save());
             promisesToKeep.push((new TestCases(testCase)).save());
+            console.log(`Finished challenge ${challenge}`);
+
         } catch(e) {
             console.log(challenge);
             console.log(e);
@@ -121,7 +125,9 @@ async function main() {
     });
     try {
         await Promise.all(promisesToKeep);
-    } catch {
+    } catch(e) {
+        console.log("Last try catch");
+        console.log(e);
         /* mongoose must have rejected a document which did't follow the schema */
     }
     mongoose.disconnect();
