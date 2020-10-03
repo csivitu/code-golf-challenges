@@ -114,6 +114,7 @@ async function main() {
             promisesToKeep.push((new Questions(question)).save());
             promisesToKeep.push((new TestCases(testCase)).save());
         } catch(e) {
+            console.log(challenge);
             console.log(e);
             /* yaml didn't parse correctly */
         }
