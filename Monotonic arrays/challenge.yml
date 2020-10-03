@@ -13,8 +13,9 @@ description: |
   Print true if the given array A is monotonic else print false.
 
   Input Format:
-  First line will contain T, number of test cases. Then the test cases follow.
-  Each a space seperated array of numbers as input.
+  First line will contain T, number of test cases. 
+  The first line of each test case contains an integer N, the length of the array.
+  The second line of each test case contains N spaced integers.
 
   Constraints:
   1 ≤ T ≤ 10
@@ -26,7 +27,9 @@ description: |
 
   Sample Input:
   2
+  4
   6 5 4 4
+  4
   5 15 20 10
 
   Sample Output:
@@ -44,7 +47,9 @@ test_cases:
     1:
       input: |
         2
+        4
         6 5 4 4
+        4
         5 15 20 10
       output: |
         true
