@@ -12,15 +12,21 @@ description: |
   As Lisa has never tried this before, the structure of her tower is quite simple. It will be a triangular tower with N levels. The number of champagne glasses 
   in each level is equal to the level number. The maximum capacity of each champagne glass is 100ml. After making the Simple Champagne Tower, Lisa starts filling 
   the glasses of the tower with Dom Perignon- Rosa's favourite champagne. She starts pouring into the topmost glass at the rate of 100ml per second. Once a glass 
-  becomes full, the champagne pours over along its edges equally into the two glasses immediately under it. After T seconds, Lisa's mother asks her - "How many
+  becomes full, the champagne pours over along its edges equally into the two glasses immediately under it. After K seconds, Lisa's mother asks her - "How many
   glasses have you completely filled so far?" What is Lisa's answer?
 
   Input Format:
-  The first line of the input is an integer N which is equal to the number of levels in Lisa's Champagne Tower.
-  The second line of the input is an integer T which denotes the number of seconds after Lisa started pouring the champagne when her mother asked her the question.
+  The first line contains an integer T, the number of test cases.
+  The first line of each test case is an integer N which is equal to the number of levels in Lisa's Champagne Tower.
+  The second line of each test case is an integer K which denotes the number of seconds after Lisa started pouring the champagne when her mother asked her the question.
 
   Output Format:
-  The output is an integer which denotes the number of completely filled champagne glasses after T seconds.
+  The output is an integer which denotes the number of completely filled champagne glasses after K seconds.
+  
+  Constraints:
+  1<=T<=10 
+  1<=N<=1000
+  1<=K<=5000
 
   Sample Input:
   3
@@ -35,10 +41,10 @@ description: |
      B C
     D E F
   where A...F are champagne glasses. 
-  Given T=2,
-  - When T=1, glass A will be completely filled.
-  - When T=2, glasses B and C will both be half-filled.
-  Hence, after T=2, the number of completely filled champagne glasses=1.
+  Given K=2,
+  - When K=1, glass A will be completely filled.
+  - When K=2, glasses B and C will both be half-filled.
+  Hence, after K=2, the number of completely filled champagne glasses=1.
                  
 points: 500
 
