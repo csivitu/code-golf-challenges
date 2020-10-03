@@ -14,21 +14,22 @@ description: |
    
 
   Input Format:
-  First line contains an integer K, the number of test cases taken.
-  The next line contains N, the time duration(in weeks) in which we need to find the longest subsequence of holidays.
-  The following line contains 5 integers for the attendance of week 0.(1 for present and 0 for absent)
+  First line contains an integer T, the number of test cases taken.
+  The first line of each test case contains N, the time duration(in weeks) in which we need to find the longest sequence of holidays.
+  The second line of each test case contains 5 integers for the attendance of week 0. (1 for present and 0 for absent)
+  
   Output Format:
-  For each test case, print the value for longest subsequence of holidays that Harshit gets.(including week 0)
+  For each test case, print the value for longest sequence of holidays that Harshit gets. (including week 0)
 
   Constraints:
-  1<=T<=10^5 
+  1<=T<=10^4 
   1<=N<=10^6
 
   Sample Input:
   2
   2
   1 0 0 1 1
-  21
+  3
   1 1 1 0 0
 
   Sample Output:
@@ -44,14 +45,7 @@ description: |
   1st week: 0 1 0 0 1
   2nd week: 0 0 0 1 1
   3rd week: 1 0 1 1 0
-  .
-  .
-  .
-  21st week: 0 1 0 0 1
-
-  After checking the sequence, we see that the longest contiguous subsequence is 3. 
-  i.e 1 1 1 0 0 0 1 0 0(last 2 days of week 0 and the first day of week 1)
-
+  After checking the sequence, we can see that the longest contiguous subsequence is 3. 
 
 points: 500
 
@@ -64,7 +58,6 @@ test_cases:
         1 1 1 1 0
         6
         1 0 0 1 1
-        
         
       output: |
         4

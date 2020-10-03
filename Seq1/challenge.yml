@@ -11,7 +11,7 @@ description: |
 
   where log is of base e
   
-  Find the approximation of the sequence subject to the following conditions - 
+  Find the sum of sequence from a(th) term to b(th) term (both inclusive) and print the sum till first c digits after decimal point.
 
   Input Format:
   First line contains an integer T, the number of test cases. 
@@ -22,7 +22,7 @@ description: |
   c - number of decimal places to display (no rounding off, just truncate)
 
   Output Format:
-  For each test case print a single line containing the value of the approximation. 
+  For each test case print a single line containing the value of the sum to c places after decimal point. 
 
   Constraints:
   1<=T<=10^5
