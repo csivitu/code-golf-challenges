@@ -15,7 +15,7 @@ Output Format:
   For each test case, print 'YES' if the rules of social distancing are maintained and print 'NO' if the rules are disobeyed.
 Contraints:
   1<=t<=10^2
-  1<=N<=10^4
+  1<=N<=10^6
 Sample Input:
   3
   3

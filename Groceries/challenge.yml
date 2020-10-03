@@ -18,8 +18,8 @@ Output Format:
   if there are 1 or more items that are different.
 Contraints:
   1<=t<=10^2
-  1<=N<=10^3
-  1<=M<=10^3
+  1<=N<=10^5
+  1<=M<=10^5
 Sample Input:
   2
   4 3
