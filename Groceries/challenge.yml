@@ -10,6 +10,7 @@ description: |
   to give him a list of N ID numbers of the items and asks him to get as many items as he can carry(Minimum 1). She wants him to report the M items bought by 
   him so that she can make sure that he doesnt eat outside junk food during the pandemic. Help Pintu's mother by finding out if all the items 
   bought by Pintu fall in the list which she gave earlier. Duplicate items are written multiple times.
+  Note : Use fast i/o methods.
   
   Input Format:
   First line contains an integer T, the number of test cases.
