@@ -13,14 +13,16 @@ description: |
   in front of Candy Store 0 right now. Can you successfully pick your order from Candy Store S? If you can, print 1. If not, print 0.
 
   Input Format:
-  The first line of the input is an integer 'S' which denotes the Candy Store where you should end up at.
-  The second line of the input is an integer 'p' .
-  The third line of the input is an integer 'q' .
+  The first line contains an integer T, the number of test cases.
+  The first line of each test case contains an integer S which denotes the Candy Store where you should end up at.
+  The second line of each test case contains an integer p .
+  The third line of each test case contains an integer q .
 
   Output Format:
   The output is an integer : 1 or 0, to show if you could successfully pick your order from Candy Store S or not. 
 
   Sample Input:
+  1
   11
   2
   5
@@ -38,9 +40,7 @@ description: |
   - Skip backwards to Candy Store 11 (-2)
   11= 5+5+5-2-2
   So, the output is 1 as it is possible to reach Candy Store 11. 
-
-
-                 
+      
 points: 500
 
 # Test cases are of 2 types - sample and hidden. Test cases are numbered.
@@ -51,6 +51,7 @@ test_cases:
   sample:
     1:
       input: |
+        1
         11
         2
         4
