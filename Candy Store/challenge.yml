@@ -7,34 +7,32 @@ category: Easy
 # This will be visible on the frontend, should consist of all
 # data that the user needs to see.
 description: |
-  Problem Statement:
-  There is an infinite line of Candy Stores in front of you. All of the stores are numbered- Store 0, Store 1, Store 2.... and so on. You have to pick your
-  order from Candy Store S. However, to reach the correct store you have to either skip forward or backward by p or q stores multiple times. You are standing 
-  in front of Candy Store 0 right now. Can you successfully pick your order from Candy Store S? If you can, print 1. If not, print 0.
+  ## Problem Statement:
+  There is an infinite line of Candy Stores in front of you. All of the stores are numbered- Store 0, Store 1, Store 2.... and so on. You have to pick your order from Candy Store S. However, to reach the correct store you have to either skip forward or backward by p or q stores multiple times. You are standing in front of Candy Store 0 right now. Can you successfully pick your order from Candy Store S? If you can, print 1. If not, print 0.
 
-  Input Format:
+  ## Input Format:
   The first line contains an integer T, the number of test cases.
   The first line of each test case contains an integer S which denotes the Candy Store where you should end up at.
   The second line of each test case contains an integer p .
   The third line of each test case contains an integer q .
 
-  Output Format:
+  ## Output Format:
   The output is an integer : 1 or 0, to show if you could successfully pick your order from Candy Store S or not. 
   
-  Constraints:
+  ## Constraints:
   1<T<=10000
   1<=S,p,q<=10^18
 
-  Sample Input:
+  ## Sample Input:
   1
   11
   2
   5
 
-  Sample Output:
+  ## Sample Output:
   1
   
-  Explanation:
+  ## Explanation:
   You have to go to Candy Store 11.
   The steps are as follows,
   - Skip forward to Candy Store 5 (+5)

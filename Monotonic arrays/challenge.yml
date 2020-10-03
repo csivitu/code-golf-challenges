@@ -4,41 +4,35 @@ author: alias-rahil
 category: Easy
 
 description: |
-  Problem Statement:
-  Given an array A containing N integers.
-  The task is to check whether the array is Monotonic or not.
-  An array is monotonic if it is either monotone increasing or monotone decreasing.
-  An array A is monotone increasing if for all i <= j, A[i] <= A[j].
-  An array A is monotone decreasing if for all i <= j, A[i] >= A[j].
-  Print true if the given array A is monotonic else print false.
+  ## Problem Statement:
+  Given an array A containing N integers. The task is to check whether the array is Monotonic or not. An array is monotonic if it is either monotone increasing or monotone decreasing. An array A is monotone increasing if for all i <= j, A[i] <= A[j]. An array A is monotone decreasing if for all i <= j, A[i] >= A[j]. Print true if the given array A is monotonic else print false.
 
-  Input Format:
+  ## Input Format:
   First line will contain T, number of test cases. 
   The first line of each test case contains an integer N, the length of the array.
   The second line of each test case contains N spaced integers.
 
-  Constraints:
+  ## Constraints:
   1 ≤ T ≤ 10
   1 ≤ N ≤ 100000
   1 ≤ A[i] ≤ 100000
 
-  Output Format:
+  ## Output Format:
   For each test case, output in a single line either true or false.
 
-  Sample Input:
+  ## Sample Input:
   2
   4
   6 5 4 4
   4
   5 15 20 10
 
-  Sample Output:
+  ## Sample Output:
   true
   false
 
-  Explanation:
-  First test case array is monotone increasing.
-  The second one is neither monotone increasing nor monotone decreasing.
+  ## Explanation:
+  First test case array is monotone increasing. The second one is neither monotone increasing nor monotone decreasing.
 
 points: 500
 

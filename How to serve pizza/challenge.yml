@@ -7,23 +7,21 @@ category: Easy
 # This will be visible on the frontend, should consist of all
 # data that the user needs to see.
 description: |
-  Problem Statement:
-  John runs a charity for kids, but he is also not very rich. One day John decides to serve pizza to the kids in the charity but due to his bad
-  financial conditions he is able to order just one pizza. However he wants to cut the pizza in the maximum number of pieces, his only constraint
-  being the number of cuts he make in the pizza (n). Your task here is to cut the pizza into maximun number of pieces with the given number of cuts.
+  ## Problem Statement:
+  John runs a charity for kids, but he is also not very rich. One day John decides to serve pizza to the kids in the charity but due to his bad financial conditions he is able to order just one pizza. However he wants to cut the pizza in the maximum number of pieces, his only constraint being the number of cuts he make in the pizza (n). Your task here is to cut the pizza into maximun number of pieces with the given number of cuts.
 
-  Input Format:
+  ## Input Format:
   The first line of input is the number of test cases T.
   T lines follow, each line contains a positive integer N (number of cuts John can make in the pizza).  
 
-  Output Format:
+  ## Output Format:
   For each test case print a single line containing the maximum number of pieces that can be obtained by making N cuts in the pizza.  
 
-  Constraints:
+  ## Constraints:
   1<=T<=10^5
   1<=n<=10^6 
 
-  Sample Input:
+  ## Sample Input:
   5
   3
   7
@@ -31,7 +29,7 @@ description: |
   9
   23 
 
-  Sample Output:
+  ## Sample Output:
   7
   29
   4

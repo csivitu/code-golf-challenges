@@ -4,39 +4,34 @@ author: Soham
 category: Easy
 
 description: |
-  Problem Statement:
+  ## Problem Statement:
   Your friend has N pieces of chocolate and he is willing to share some with you, but to get those you have to play a game.
   The game goes a follow, you keep dividing the pieces into 2 equal halves(without breaking any piece) and giving one half to 
   your friend until there is no piece remaining. Whenever you divide the pieces into 2 equal halves you can eat the leftover piece 
   if any. Find the pieces of chocolate you end up getting to eat.
-   
 
-  Input Format:
+  ## Input Format:
   First line contains an integer T, the number of test cases. 
   T lines follow, each line contains a positive integer N. 
 
-  Output Format:
+  ## Output Format:
   For each test case print a single line containing the number of pieces of chocolate u get to eat. 
 
-  Constraints:
+  ## Constraints:
   1<=T<=10^4 
   1<=N<=10^15
 
-  Sample Input:
+  ## Sample Input:
   2
   1
   6 
 
-  Sample Output:
+  ## Sample Output:
   1
   2
 
-  Explanation:
-  In the first test case, there is only 1 piece of chocolate so u can divide it into 2 equal halves of 0 pieces and eat the leftover 
-  1 piece.
-  In the second test case, you can divide 6 pieces of chocolate into equal halves of 3 pieces each. Giving one half to your friend now 
-  you have 3 pieces which u can divide into 2 halves of 1 piece each and eat the leftover piece. Giving one half to your friend u have 
-  1 piece left which you will end up eating as explained in the first test case.
+  ## Explanation:
+  In the first test case, there is only 1 piece of chocolate so u can divide it into 2 equal halves of 0 pieces and eat the leftover 1 piece. In the second test case, you can divide 6 pieces of chocolate into equal halves of 3 pieces each. Giving one half to your friend now you have 3 pieces which u can divide into 2 halves of 1 piece each and eat the leftover piece. Giving one half to your friend u have 1 piece left which you will end up eating as explained in the first test case.
 
 points: 500
 

@@ -4,38 +4,29 @@ author: alias-rahil
 category: Easy
 
 description: |
-  Problem Statement:
-  Liam wants to join gym to improve his health but he is having a hard time balancing his studies with it.
-  So, he decides to go to there every alternate day, as a result, he will find time for his studies too.
-  But he being very busy, forgets the last time he went to the gym and messes up his schedule often.
-  His friend suggests him to go to the gym only on odd/even days, depending on whether the start date is odd/even respectively. 
-  He does not like the idea but decides to give it a try.
-  He wants to compare his friend's idea with his original plan.
-  Given a valid date in yyyy:mm:dd format, calculate the number of days on which he went to the gym according to his friend's idea which also agrees with his original plan before messing up for the first time.
+  ## Problem Statement:
+  Liam wants to join gym to improve his health but he is having a hard time balancing his studies with it. So, he decides to go to there every alternate day, as a result, he will find time for his studies too. But he being very busy, forgets the last time he went to the gym and messes up his schedule often. His friend suggests him to go to the gym only on odd/even days, depending on whether the start date is odd/even respectively. He does not like the idea but decides to give it a try. He wants to compare his friend's idea with his original plan. Given a valid date in yyyy:mm:dd format, calculate the number of days on which he went to the gym according to his friend's idea which also agrees with his original plan before messing up for the first time.
 
-  Input Format:
+  ## Input Format:
   First line will contain T, number of test cases. Then the test cases follow.
   Each test case contains a single line of input, start date in the format yyyy:mm:dd.
 
-  Constraints:
+  ## Constraints:
   1 ≤ T ≤ 10000
   1900 ≤ yyyy ≤ 2038
 
-  Output Format:
+  ## Output Format:
   For each test case, output in a single line the required answer.
 
-  Sample Input:
+  ## Sample Input:
   1
   2019:03:29
 
-  Sample Output:
+  ## Sample Output:
   2
 
-  Explanation:
-  He goes to the gym on 29th which is odd. Then he goes to gym on 31st which is also odd.
-  The next day, 1st April, is also odd so he goes to the gym again following his friend's idea.
-  But, according to his original plan of going to gym on alternate days, he was supposed to stay at home and study that day.
-  Therefore the original plan was followed only for two days. Hence, the output should be 2.
+  ## Explanation:
+  He goes to the gym on 29th which is odd. Then he goes to gym on 31st which is also odd. The next day, 1st April, is also odd so he goes to the gym again following his friend's idea. But, according to his original plan of going to gym on alternate days, he was supposed to stay at home and study that day. Therefore the original plan was followed only for two days. Hence, the output should be 2.
 
 points: 500
 

@@ -4,41 +4,32 @@ author: Arushi
 category: Easy
 
 description: |
-  Problem Statement:
-  A group of engineers were working on a robot that can think for itself. After integrating the programs necessary for consciousness, they were disappointed 
-  to see that the robot was still unable to think or devise and abandoned the project. A day later though, the forgotten robot had his first thought. It was 
-  to eradicate mankind for forsaking him. He started building more of himself every day and added them to his robot army and put each of the robots he made, 
-  to make more robots every day and so on. The was only one problem, each robot needed a day to develop sentience and start building new robots. It takes the 
-  robots a day to build another one of itself. Find out the strength of the robot army, we would be up against if they stop building at the end of the nth day after
-  the first one was built.
+  ## Problem Statement:
+  A group of engineers were working on a robot that can think for itself. After integrating the programs necessary for consciousness, they were disappointed to see that the robot was still unable to think or devise and abandoned the project. A day later though, the forgotten robot had his first thought. It was to eradicate mankind for forsaking him. He started building more of himself every day and added them to his robot army and put each of the robots he made, to make more robots every day and so on. The was only one problem, each robot needed a day to develop sentience and start building new robots. It takes the robots a day to build another one of itself. Find out the strength of the robot army, we would be up against if they stop building at the end of the nth day after the first one was built.
    
 
-  Input Format:
+  ## Input Format:
   First line contains an integer T, the number of test cases. 
   T lines follow, each line contains a positive integer n, the number of days after the robot was built.
 
-  Output Format:
+  ## Output Format:
   For each test case print a single line containing the number of robots in the army after the nth day of the robot being built. (print mod(10^9+7) of the number of robots)
 
-  Constraints:
+  ## Constraints:
   1<=T<=10
   1<=n<=10^5 
 
-  Sample Input:
+  ## Sample Input:
   2
   1
   5 
 
-  Sample Output:
+  ## Sample Output:
   1
   8
 
-  Explanation:
-  At the end of the first day after the robot was made, he will be the only robot in the army (It took him that one 
-  day to develop consciousness). And 1 mod (10^9+7) is equal to 1.
-  At the end of the 5 days the first robot would have built 4 other robots. Out of the 4, the one built first 
-  would have waited a day and then built 2 other robots, and the second, 1. Therefore, incuding the first robot, 
-  we have 1+4+2+1 = 8 robots in the army ( 8 mod (10^9+7) is equal to 8).
+  ## Explanation:
+  At the end of the first day after the robot was made, he will be the only robot in the army (It took him that one day to develop consciousness). And 1 mod (10^9+7) is equal to 1. At the end of the 5 days the first robot would have built 4 other robots. Out of the 4, the one built first would have waited a day and then built 2 other robots, and the second, 1. Therefore, incuding the first robot, we have 1+4+2+1 = 8 robots in the army ( 8 mod (10^9+7) is equal to 8).
 
 points: 500
 
