@@ -48,7 +48,7 @@ description: |
   ***** ******* 
     *      *       
 
-  Explanation:
+  ## Explanation:
   The first two lines indicate the size of the garden, which is 2 rows and 2 columns. The next two lines are the size of the trees, 3 and 4. The output shows a garden of size 2x2 with trees grown as shown in the question of sizes 3 and 4.
 points: 500
 test_cases:
