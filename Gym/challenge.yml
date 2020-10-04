@@ -1,7 +1,7 @@
 name: Gym
 author: alias-rahil
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -28,7 +28,7 @@ description: |
   ## Explanation:
   He goes to the gym on 29th which is odd. Then he goes to gym on 31st which is also odd. The next day, 1st April, is also odd so he goes to the gym again following his friend's idea. But, according to his original plan of going to gym on alternate days, he was supposed to stay at home and study that day. Therefore the original plan was followed only for two days. Hence, the output should be 2.
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -50,6 +50,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 3
 
 visibility: hidden
