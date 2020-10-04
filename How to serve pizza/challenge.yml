@@ -36,7 +36,7 @@ description: |
   46
   277
 
-points: 500
+points: 100
 
 # Test cases are of 2 types - sample and hidden. Test cases are numbered.
 # Each test case has an `input` and an `output`. The input and output may
