@@ -31,7 +31,7 @@ description: |
   ## Explanation:
   At the end of the first day after the robot was made, he will be the only robot in the army (It took him that one day to develop consciousness). And 1 mod (10^9+7) is equal to 1. At the end of the 5 days the first robot would have built 4 other robots. Out of the 4, the one built first would have waited a day and then built 2 other robots, and the second, 1. Therefore, incuding the first robot, we have 1+4+2+1 = 8 robots in the army ( 8 mod (10^9+7) is equal to 8).
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
@@ -55,6 +55,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 2
 
 visibility: hidden
