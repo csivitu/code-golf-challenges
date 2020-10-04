@@ -43,7 +43,7 @@ description: |
   11= 5+5+5-2-2
   So, the output is 1 as it is possible to reach Candy Store 11. 
       
-points: 500
+points: 100
 
 # Test cases are of 2 types - sample and hidden. Test cases are numbered.
 # Each test case has an `input` and an `output`. The input and output may
