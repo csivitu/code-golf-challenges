@@ -1,7 +1,7 @@
 name: Home
 author: roerohan
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -27,7 +27,7 @@ description: |
   ## Explanation:
   Since 'n' is 20, and 't' is 3, John's house number would be the 3rd prime number less than 20. The 1st prime 20 is 19, 2nd is 17, and the 3rd is 13. So John's house number is 13.
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -53,6 +53,6 @@ test_cases:
       output: |
         696061
   
-round: 1
+round: 2
 
 visibility: hidden
