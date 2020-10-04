@@ -35,7 +35,7 @@ description: |
 
   ## Explaination:
   For the first test case, the first and third spots are occupied and the distance between them is 2 meters. For the second test case, the first and seventh spots are occupied and the distance between them is 6 meters which is allowed.
-points: 500
+points: 100
 
 test_cases: 
   sample:
@@ -58,7 +58,7 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 3
 
 visibility: hidden
 
