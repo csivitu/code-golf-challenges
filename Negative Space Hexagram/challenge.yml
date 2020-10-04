@@ -1,7 +1,7 @@
 name: Negative Space Hexagram
 author: Arushi
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -38,7 +38,7 @@ description: |
   ## Explanation:
   The input is 8, which is the length of the triangle from the top. We have a line of stars at the top and the bottom of the hexagram as well as on either sides. The first triangle (made of whitespaces) starts from the 2nd line and continues till the 9th and the second triangle starts from the 5th line and moves till the 12th.
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -77,6 +77,6 @@ test_cases:
       output:
         file: ./out3.txt   
   
-round: 1
+round: 2
 
 visibility: hidden
