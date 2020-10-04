@@ -117,7 +117,6 @@ async function main() {
             };
             promisesToKeep.push((new Questions(question)).save());
             promisesToKeep.push((new TestCases(testCase)).save());
-            console.log(`Finished challenge ${challenge}`);
 
         } catch (e) {
             console.log(e);
