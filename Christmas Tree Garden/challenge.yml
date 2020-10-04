@@ -1,6 +1,6 @@
 name: Christmas Tree Garden
 author: parthkgh24
-category: Easy
+category: Hard
 description: |
   ## Problem Statement:
   It is almost the holiday season, and you want to grow a garden of Christmas trees. You have two types of seeds which create two different sizes of trees, each planted alternately in your rectangular garden. A tree of size 3 should look like this, with a single centered asterisk for the trunk:
