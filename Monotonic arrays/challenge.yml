@@ -34,7 +34,7 @@ description: |
   ## Explanation:
   First test case array is monotone increasing. The second one is neither monotone increasing nor monotone decreasing.
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
@@ -60,6 +60,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 2
 
 visibility: hidden
