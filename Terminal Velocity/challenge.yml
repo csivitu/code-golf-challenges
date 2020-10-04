@@ -40,7 +40,7 @@ description: |
   ## Explanation:
   The value of 'u' turns out to be 4194.304 and the value of 'v' is 3355.4432. So the maximum speed would be (4194.304 - 3355.4432) or 838 (floor-ed).
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
@@ -62,6 +62,6 @@ test_cases:
       output:
         file: ./out2.txt
   
-round: 1
+round: 2
 
 visibility: hidden
