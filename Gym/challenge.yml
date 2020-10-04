@@ -50,6 +50,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 3
+round: 2
 
 visibility: hidden
