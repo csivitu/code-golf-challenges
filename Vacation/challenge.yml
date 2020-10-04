@@ -41,7 +41,7 @@ description: |
   3rd week: 1 0 1 1 0
   After checking the sequence, we can see that the longest contiguous subsequence is 3. 
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
