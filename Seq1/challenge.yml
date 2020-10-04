@@ -1,7 +1,7 @@
 name: Seq1
 author: David
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -39,7 +39,7 @@ description: |
   ## Explanation:
   The sum of the series is 8.299093732712269 which when truncated to 2 decimal places is 8.29 and 3 decimal places is 8.299
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -78,6 +78,6 @@ test_cases:
       output:
         file: ./out5.txt   
   
-round: 1
+round: 3
 
 visibility: hidden
