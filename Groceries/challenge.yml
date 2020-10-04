@@ -36,7 +36,7 @@ description: |
   ## Explaination:
   In the first test case, the item's to get have id's 22,33,23 and 1. Pintu gets 1 33 22 which are all in the list. Due to this we print 'YES'. For the second test case, the item's to get have id's 2 and 4. Pintu get more than 2 items which means that he got extra items. Due to this 'NO' would be printed.
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
@@ -62,6 +62,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 2
 
 visibility: hidden
