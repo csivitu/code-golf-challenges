@@ -1,7 +1,7 @@
 name: Jack-And-The-Beanstalk
 author: david
 
-category: Easy
+category: Hard
 
 description: |
   ## Problem Statement:
@@ -84,6 +84,6 @@ test_cases:
         file: ./out5.txt 
    
   
-round: 1
+round: 2
 
 visibility: hidden
