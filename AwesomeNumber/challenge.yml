@@ -1,7 +1,7 @@
 name: AwesomeNumber
 author: alias-rahil
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -32,7 +32,7 @@ description: |
 
   ## Note: Please make sure there are no infinite loops in the code you submit.
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -58,6 +58,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 3
 
 visibility: hidden
