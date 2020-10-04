@@ -1,7 +1,7 @@
 name: Diner
 author: AJ1479
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -40,7 +40,7 @@ description: |
   ## Explanation:
   On this particular night, we see 11 customers appear at the restaurant. The first five will be seated at the first table. After each customer is seated, one minute gets decremented, thus leaving the eating times at the first table [0,2,4,2,5] after the last customer is seated. Since the 5 people are seated at the table at once, they now need to wait till everyone has finished eating. So, when the sixth customer(with eating time 1 minute) joins, he is seated at another table. The same continues till the tenth customer, when the eating times at the first table will have all become zero. Once the eleventh customer arrives, the customers at the first table will have all left, leaving it free hence the eleventh customer(eating time 6) will sit there. Now that the line is over, we see we have needed two tables, and the eating times of the customers sitting there are [4,5,6,3,5,6] and [1,2,3,4,5].
 
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -75,6 +75,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 2
 
 visibility: hidden
