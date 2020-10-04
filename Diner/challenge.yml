@@ -69,11 +69,11 @@ test_cases:
         file: ./in1.txt
       output:
         file: ./out1.txt
-    2:
-      input:
-        file: ./in2.txt
-      output:
-        file: ./out2.txt   
+#     2:
+#       input:
+#         file: ./in2.txt
+#       output:
+#         file: ./out2.txt   
   
 round: 3
 
