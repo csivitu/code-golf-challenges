@@ -10,7 +10,6 @@ for i in range(2,10**5 +1):
 for _ in range(int(input())):
     l=[int(i) for i in input().split()][:3]
     ans=seq[l[1]]-seq[l[0]-1]
-    print(ans)
     temp=str(ans)
     temp=temp+'0'*10
     pos = temp.find('.')
