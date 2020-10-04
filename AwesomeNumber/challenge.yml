@@ -27,7 +27,7 @@ description: |
 
   ## Sample Output:
   Awesome
-  Not awesome
+  Not Awesome
   Awesome
 
   ## Note: Please make sure there are no infinite loops in the code you submit.
@@ -44,7 +44,7 @@ test_cases:
         13
       output: |
         Awesome
-        Not awesome
+        Not Awesome
         Awesome
   hidden:
     1:
