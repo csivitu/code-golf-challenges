@@ -33,7 +33,7 @@ description: |
   ## Explanation:
   In the first test case, there is only 1 piece of chocolate so u can divide it into 2 equal halves of 0 pieces and eat the leftover 1 piece. In the second test case, you can divide 6 pieces of chocolate into equal halves of 3 pieces each. Giving one half to your friend now you have 3 pieces which u can divide into 2 halves of 1 piece each and eat the leftover piece. Giving one half to your friend u have 1 piece left which you will end up eating as explained in the first test case.
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
