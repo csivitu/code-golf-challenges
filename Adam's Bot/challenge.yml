@@ -30,7 +30,7 @@ description: |
   ## Explanation:
   Some of the final possible co-ordinates can be (2,0), (1,1), (1,-1), (0,0) etc.
 
-points: 500
+points: 100
 
 # Test cases are of 2 types - sample and hidden. Test cases are numbered.
 # Each test case has an `input` and an `output`. The input and output may
