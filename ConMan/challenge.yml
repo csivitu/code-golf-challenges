@@ -30,7 +30,7 @@ description: |
   ## Explanation:
   The left most digit of a number is the first digit. 121342 is in row 1, which is an odd numbered row so the output will be 1+1+4 = 6, which is the sum of digits in the odd places of the number. 121342 is in row 2, which is an even numbered row so the output would be 2+3+2 = 7 , which is the sum of digits in the even places of the number.
 
-points: 500
+points: 100
 
 test_cases: 
   sample:
