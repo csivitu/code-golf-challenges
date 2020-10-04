@@ -2,7 +2,7 @@ name: Simple Champagne Tower
 author: SrishtiGohain
 
 # Category can be Easy, Medium or Hard
-category: Easy
+category: Medium
 
 # This will be visible on the frontend, should consist of all
 # data that the user needs to see.
@@ -42,7 +42,7 @@ description: |
   - When K=2, glasses B and C will both be half-filled.
   Hence, after K=2, the number of completely filled champagne glasses=1.
                  
-points: 500
+points: 300
 
 # Test cases are of 2 types - sample and hidden. Test cases are numbered.
 # Each test case has an `input` and an `output`. The input and output may
