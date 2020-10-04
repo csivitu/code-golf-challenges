@@ -1,7 +1,7 @@
 name: Closer to Squares
 author: Soham
 
-category: Easy
+category: Medium
 
 description: |
   ## Problem Statement:
@@ -34,7 +34,7 @@ description: |
   ## Explanation:
   In the first test case, 1 cannot be converted into any other number through the given operations and its difference from a perfect square is 0. In the second test case, 34 can be converted into 37,41 and 45 by performing upto 3 operations. Minimum difference is when we select 37 as 37-36=1.
   
-points: 500
+points: 300
 
 test_cases: 
   sample:
@@ -58,6 +58,6 @@ test_cases:
       output:
         file: ./out2.txt   
   
-round: 1
+round: 3
 
 visibility: hidden
