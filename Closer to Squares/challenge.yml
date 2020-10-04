@@ -49,12 +49,12 @@ test_cases:
   hidden:
     1:
       input:
-        file: ./in1.txt
+        file: ./inp1.txt
       output:
         file: ./out1.txt
     2:
       input:
-        file: ./in2.txt
+        file: ./inp2.txt
       output:
         file: ./out2.txt   
   
